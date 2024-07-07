@@ -1,0 +1,23 @@
+
+/* .createUser{
+    
+} */
+.--formUser{
+    display: flex;
+    flex-direction: column;
+}
+.labelColum{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.inputFormUser{
+    height: 1.5rem;
+    width: 30%;
+    cursor: pointer;
+}
+.submitButton{
+    height: 2rem;
+    width: 15%;
+    margin: 1rem;
+}

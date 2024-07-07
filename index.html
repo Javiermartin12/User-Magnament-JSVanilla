@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container hidden">
         <div class="sideBar">
             
         </div>
@@ -20,8 +20,21 @@
             </main>
         </div> 
     </div>
-    <div class="container hidden">
-
+    <div class="container --formUser">
+        <form class="createUser" id="createUser"></form>
+            <label for="idUser" class="labelColum idUserLabel">ID:
+                <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id"></label>
+            <label for="name" class="labelColum labelUserName">User Name:
+                <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name">
+            </label>
+            <label for="email" class="labelColum labelEmail">Email:
+                <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email">
+            </label>
+            <label for="password" class="labelColum labelPassword">Password:
+                <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password">
+            </label>
+            <button type="submit" class="submitButton" id="submitButton">Submit</button>
+        </form>
     </div>
     
 </body>
