@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () =>{
   document.getElementById('createUser').addEventListener('submit', async function(event){
     event.preventDefault()
-
+    
     const id = document.getElementById('idUser').value
     const name = document.getElementById('userName').value
     const email = document.getElementById('inputEmail').value
@@ -18,14 +18,17 @@ document.addEventListener('DOMContentLoaded', () =>{
             body: JSON.stringify(data)
             
         })
-        if (response.ok) {
-            this.classList.add('hidden')
-        }
+        
+           
+            
+
+        
         alert('User saved correctly');
     } catch (error) {
         console.error('Error:', error);
         alert('There was a problem to signup user');
     }
+    
   })
 })
 

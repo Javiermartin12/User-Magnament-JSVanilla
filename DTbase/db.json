@@ -1,5 +1,16 @@
 {
   "users": [
-    
+    {
+      "id": "1",
+      "name": "Javier Martin",
+      "email": "javiermartinruiz21@gmail.comEl",
+      "password": "123456"
+    },
+    {
+      "id": "",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
   ]
 }
