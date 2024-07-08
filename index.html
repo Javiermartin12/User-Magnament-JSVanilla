@@ -8,7 +8,7 @@
     <title>Manage User</title>
 </head>
 <body>
-    <div class="container  main">
+    <div class="container main" id="main--container">
         <div class="sideBar">
             
         </div>
@@ -21,7 +21,7 @@
             </main>
         </div> 
     </div>
-    <div class="container hidden --formUser">
+    <div class="container hidden --formUser" id="formUser">
         <form  class="createUser" id="createUser">
             <label for="idUser" class="labelColum idUserLabel">ID:
                 <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id"></label>
@@ -34,6 +34,7 @@
             <label for="inputPassword" class="labelColum labelPassword">Password:
                 <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" autocomplete="new-password">
             </label>
+            <button type="button" class="submitButton" id="backForm">Back</button>
             <button type="submit" class="submitButton" id="submitButton">Submit</button>
         </form>
     </div>

@@ -3,14 +3,14 @@
     {
       "id": "1",
       "name": "Javier Martin",
-      "email": "javiermartinruiz21@gmail.comEl",
+      "email": "javiermartinruiz21@gmail.com",
       "password": "123456"
     },
     {
-      "id": "",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "1",
+      "name": "Juan",
+      "email": "Juan@gmail.com",
+      "password": "1234"
     }
   ]
 }
