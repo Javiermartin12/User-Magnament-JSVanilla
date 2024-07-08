@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script defer  src="index.js"></script>
-    <title>Document</title>
+
+    <title>Manage User</title>
 </head>
 <body>
     <div class="container hidden">
@@ -21,21 +21,21 @@
         </div> 
     </div>
     <div class="container --formUser">
-        <form class="createUser" id="createUser"></form>
+        <form  class="createUser" id="createUser">
             <label for="idUser" class="labelColum idUserLabel">ID:
-                <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id"></label>
-            <label for="name" class="labelColum labelUserName">User Name:
-                <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name">
+                <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id"></label>
+            <label for="userName" class="labelColum labelUserName">User Name:
+                <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name" autocomplete="name">
             </label>
-            <label for="email" class="labelColum labelEmail">Email:
-                <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email">
+            <label for="inputEmail" class="labelColum labelEmail">Email:
+                <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email" autocomplete="email">
             </label>
-            <label for="password" class="labelColum labelPassword">Password:
-                <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password">
+            <label for="inputPassword" class="labelColum labelPassword">Password:
+                <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" autocomplete="new-password">
             </label>
             <button type="submit" class="submitButton" id="submitButton">Submit</button>
         </form>
     </div>
-    
+    <script type="module" src="index.js"></script>
 </body>
 </html>

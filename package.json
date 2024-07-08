@@ -1,0 +1,12 @@
+{
+  "name": "user-magnament-jsvanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch DTbase/db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
