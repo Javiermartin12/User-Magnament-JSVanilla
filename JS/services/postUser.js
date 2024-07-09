@@ -1,6 +1,4 @@
-
-    //Handler create users
-    export const postUser = () => { 
+export const postUser = () => { 
         document.getElementById('createUser').addEventListener('submit', async function(event){
         event.preventDefault()
         
@@ -21,9 +19,10 @@
             })
             
             alert('User saved correctly');
-        } catch (error) {
+            } catch (error) {
             console.error('Error:', error);
             alert('There was a problem to signup user');
         }
         
-      })}
+    })
+}

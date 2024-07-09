@@ -1,3 +1,4 @@
+import { deleteUser } from "./deleteUser.js"
 export const getUsers = async () => {
 
     try {
@@ -31,6 +32,9 @@ export const getUsers = async () => {
             const deleteCell = document.createElement('td');
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
+            deleteButton.addEventListener('click', async() => {
+                await deleteUser(user.id)
+            })
             deleteCell.appendChild(deleteButton)
             row.appendChild(deleteCell)
 
