@@ -1,6 +1,7 @@
 
     //Handler create users
-    export const postUser = () => { document.getElementById('createUser').addEventListener('submit', async function(event){
+    export const postUser = () => { 
+        document.getElementById('createUser').addEventListener('submit', async function(event){
         event.preventDefault()
         
         const id = document.getElementById('idUser').value
