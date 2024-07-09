@@ -28,7 +28,11 @@ export const getUsers = async () => {
             passwordCell.textContent = user.password
             row.appendChild(passwordCell)
 
-            
+            const deleteCell = document.createElement('td');
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete'
+            deleteCell.appendChild(deleteButton)
+            row.appendChild(deleteCell)
 
             usersTableBody.appendChild(row)
         });
