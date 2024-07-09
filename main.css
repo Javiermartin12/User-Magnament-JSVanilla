@@ -3,6 +3,7 @@
 @import 'CSS/formUserPage.css';
 @import 'CSS/sideBar.css';
 @import 'CSS/containerHeader.css';
+@import 'CSS/mainContainer.css';
 *{
     margin: 0;
     padding: 0;
