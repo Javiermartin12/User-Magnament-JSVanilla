@@ -1,5 +1,12 @@
 h1{
     font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 1rem;
+    margin: 2rem 0 1rem 0;
+}
+
+h2{
+    font-size: large;
+    margin: 2rem 0 1rem 0;
+}
+p{
+    margin: 0.5rem 0 0.5rem 0;
 }
