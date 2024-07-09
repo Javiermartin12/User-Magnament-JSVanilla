@@ -1,7 +1,7 @@
 @import 'CSS/layout.css';
 @import 'CSS/input.css';
-@import '/CSS/formUserPage.css';
-
+@import 'CSS/formUserPage.css';
+@import 'CSS/sideBar.css';
 
 *{
     margin: 0;

@@ -1,7 +1,4 @@
 
-/* .createUser{
-    
-} */
 .--formUser{
     display: flex;
     flex-direction: column;
@@ -18,7 +15,7 @@
 }
 .submitButton{
     height: 2rem;
-    width: 15%;
+    width: 13%;
     margin: 1rem;
     cursor: pointer;
 }
