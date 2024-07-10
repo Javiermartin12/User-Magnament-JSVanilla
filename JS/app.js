@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     pagination()
     postUser()
     getUsers()
+    getFriends()
     
     
 })
