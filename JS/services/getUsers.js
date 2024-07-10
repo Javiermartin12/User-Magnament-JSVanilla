@@ -1,16 +1,16 @@
 import { deleteUser } from "./deleteUser.js"
+
 export const getUsers = async () => {
 
     try {
         const response = await fetch('http://localhost:3000/users')
-        
         const users = await response.json()
         
         const usersTableBody = document.querySelector('#userTable tbody')
         
         usersTableBody.innerHTML = ''
         users.forEach(user => {
-            console.log(user)
+            
             const row = document.createElement('tr')
 
             const idCell = document.createElement('td')
