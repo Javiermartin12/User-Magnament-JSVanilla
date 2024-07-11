@@ -14,7 +14,13 @@ export const postUser = () => {
         Array.from(friendsSelect.selectedOptions).forEach(option => {
             friends.push(option.textContent.trim())
         })
-       
+
+        const isIdExists = await checkIfIdExists(id)
+
+        if (isIdExists) {
+            alert(`ID ${id} already in use. Please choose other.`);
+            return;
+        }
 
         if (!id || !name || !email || !password) {
             alert('Please complete the form');
