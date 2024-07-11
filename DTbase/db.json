@@ -4,19 +4,25 @@
       "id": "1",
       "name": "Juan",
       "email": "Juan@gmail.com",
-      "password": "1234"
+      "password": "1234",
+      "friends": []
     },
     {
       "id": "2",
       "name": "Sergio",
       "email": "sergio@gmail.com",
-      "password": "12345"
+      "password": "12345",
+      "friends": []
     },
     {
       "id": "3",
-      "name": "Jorge",
-      "email": "jorge@gmail.com",
-      "password": "12345"
+      "name": "jorge",
+      "email": "j@gmail.com",
+      "password": "1234",
+      "friends": [
+        "Juan",
+        "Sergio"
+      ]
     }
   ]
 }

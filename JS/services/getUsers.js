@@ -8,7 +8,7 @@ export const getUsers = async () => {
         
         const usersTableBody = document.querySelector('#userTable tbody')
         
-        usersTableBody.innerHTML = ''
+       
         users.forEach(user => {
             
             const row = document.createElement('tr')
@@ -29,6 +29,20 @@ export const getUsers = async () => {
             passwordCell.textContent = user.password
             row.appendChild(passwordCell)
 
+            //Verify per user.id if exist
+            const friendsCell = document.createElement('td')
+            const getFriendName = (friendId, users) =>{
+                const friend = users.find(u => u.name === friendId )
+                return friend ? friend.name : 'Unknown';
+            }
+            // Verified if user.friends is an array and map the name
+            const friends = Array.isArray(user.friends) ?
+            user.friends.filter(friendId => friendId !== null).map(friendId => getFriendName(friendId, users)).join(', ')
+            : 'No friends'
+
+            friendsCell.textContent = friends || 'No friends'
+            row.appendChild(friendsCell)
+
             const deleteCell = document.createElement('td');
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
@@ -39,7 +53,7 @@ export const getUsers = async () => {
             row.appendChild(deleteCell)
 
             usersTableBody.appendChild(row)
-        });
+        })
 
     } catch (error) {
         console.error('Error fetching users:', error);
