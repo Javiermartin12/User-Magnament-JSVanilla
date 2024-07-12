@@ -45,18 +45,18 @@
     </div>
     <div class="containerCreateUser hidden --formUser" id="formUser">
         <form  class="createUser" id="createUser">
-            <label for="idUser" class=" labelColum idUserLabel">ID:</label>
+                <label for="idUser" class=" labelColum idUserLabel">ID:</label>
                 <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id">
-
+                <span id="idError" class="error-message"></span>
                 <label for="userName" class="labelColum labelUserName">User Name:</label>
                 <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name" autocomplete="name">
-
+                <span id="nameError" class="error-message"></span>
                 <label for="inputEmail" class=" labelColum labelEmail">Email:</label>
                 <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email" autocomplete="email">
-
+                <span id="emailError" class="error-message"></span>
                 <label for="usersFriends" class=" labelColum">Friends:</label>
                 <select name="user friends" class="inputFormUser" id="usersFriends" multiple></select>
-
+                <span id="passwordError" class="error-message"></span>
                 <label for="inputPassword" class=" labelColum labelPassword">Password:</label>
                 <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" >
             <button type="button" class="button --secondaryBtn submitButton" id="backForm">Back</button>

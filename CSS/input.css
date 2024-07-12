@@ -51,4 +51,16 @@ textarea.success {
     border-color: #28a745; 
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); 
 }
-
+/*manage error in form*/ 
+.error-message {
+    color: #dc3545; 
+    font-size: 14px;
+    margin-top: 0.5rem;
+    display: block;
+}
+.success-message {
+    color: #28a745; 
+    font-size: 14px;
+    margin-top: 0.5rem;
+    display: block;
+}
