@@ -1,13 +1,16 @@
 h1{
     font-size: x-large;
     margin: 0.2rem 0 1rem 0;
+    color: #2b2b2b;
 }
 
 h2{
     font-size: large;
     margin: 2rem 0 1rem 0;
+    color: #2b2b2b;
 }
 
 p{
     margin: 0.5rem 0 0.5rem 0;
+    color: #2b2b2b;
 }
