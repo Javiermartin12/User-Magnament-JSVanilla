@@ -19,3 +19,7 @@
     background-color: #d9d9d9;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); 
 }
+
+.--secondaryBtn{
+    background-color: rgba(0, 0, 0, 0.6);
+}
