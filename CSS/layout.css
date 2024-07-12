@@ -27,12 +27,15 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    
 }
 
 
 .containerColum{
     display: flex;
     flex-direction: row;
+    margin: 12rem;
+    padding: 20rem;
 }
 .containerMain{
     border-bottom-right-radius: 1rem;
