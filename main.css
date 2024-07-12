@@ -1,10 +1,10 @@
-@import 'CSS/layout.css';
-@import 'CSS/input.css';
-@import 'CSS/formUserPage.css';
-@import 'CSS/sideBar.css';
-@import 'CSS/containerHeader.css';
-@import 'CSS/mainContainer.css';
 @import 'CSS/button.css';
+@import 'CSS/containerHeader.css';
+@import 'CSS/formUserPage.css';
+@import 'CSS/input.css';
+@import 'CSS/layout.css';
+@import 'CSS/mainContainer.css';
+@import 'CSS/sideBar.css';
 
 *{
     margin: 0;
