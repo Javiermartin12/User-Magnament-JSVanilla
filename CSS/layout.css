@@ -1,10 +1,10 @@
  .container{
     height: 82%;
     width: 82%;
-    margin: 1rem;
+   
     background: rgba(229, 229, 229, 0.5); /* BG black transparent */
     backdrop-filter: blur(10px);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
 }
