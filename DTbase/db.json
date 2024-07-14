@@ -16,12 +16,11 @@
     },
     {
       "id": "3",
-      "name": "jorge",
-      "email": "j@gmail.com",
+      "name": "sergio",
+      "email": "ser@gmail.com",
       "password": "1234",
       "friends": [
-        "Juan",
-        "Sergio"
+        "Juan"
       ]
     }
   ]

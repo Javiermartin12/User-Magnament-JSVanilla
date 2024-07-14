@@ -1,7 +1,7 @@
-import { getUsers } from "./services/getUsers.js"
+import { getUsers } from "./services/userServices/getUsers.js"
 import { pagination } from "./component/pagination.js"
-import { postUser } from "./services/postUser.js"
-import { getFriends } from "./services/getFriends.js"
+import { postUser } from "./services/userServices/postUser.js"
+import { getFriends } from "./services/userServices/getFriends.js"
 document.addEventListener('DOMContentLoaded', () =>{
     pagination()
     postUser()

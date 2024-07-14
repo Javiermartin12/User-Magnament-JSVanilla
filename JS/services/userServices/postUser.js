@@ -1,4 +1,4 @@
-import { checkIfIdExists } from "./getId.js"
+import {checkIfIdExists} from '../userServices/getId.js'
 export const postUser = () => { 
 
         document.getElementById('createUser').addEventListener('submit', async function(event){
