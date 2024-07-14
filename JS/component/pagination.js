@@ -6,6 +6,8 @@ export function pagination() {
      const formPage = document.getElementById('formUser')
      const btnNewUser = document.getElementById('newUserInput')
      const backBtn = document.getElementById('backForm')
+     const btnTrainingTechSheet = document.getElementById('btnTrainingTechSheet')
+     const formTrainingTSheet = document.getElementById('formTrainingTSheet')
      //Button sideBar
      const sideBarUserPage = document.getElementById('userPage')
      const sideBarTrainigPage = document.getElementById('trainingPage')
@@ -33,6 +35,16 @@ export function pagination() {
         })
     }
     sideBarPagination()
+
+    const buttonChangeToTrainingTSheet = () => {
+        btnTrainingTechSheet.addEventListener('click', () =>{
+            formTrainingTSheet.classList.remove('hidden')
+            pageTraining.classList.add('hidden')
+            
+           
+        })
+    }
+    buttonChangeToTrainingTSheet()
      
 
 }
