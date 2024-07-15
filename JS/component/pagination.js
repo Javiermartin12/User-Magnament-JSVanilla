@@ -10,6 +10,9 @@ export function pagination() {
      const btnTrainingTechSheet = document.getElementById('btnTrainingTechSheet')
      const formTrainingTSheet = document.getElementById('formTrainingTSheet')
      const backButtonTrainingPage = document.getElementById('backFormTraining')
+     const formCourseCall = document.getElementById('formCourseCall')
+     const btnCourseCall = document.getElementById('btnCourseCall')
+     const backCoursePageButton = document.getElementById('backCoursePageButton')
      //Button sideBar
      const sideBarUserPage = document.getElementById('userPageButton')
      const userPageButton2 = document.getElementById('userPageButton2')
@@ -17,20 +20,38 @@ export function pagination() {
      const trainingPageButton2 = document.getElementById('trainingPageButton2')
      const sideBarCoursePage = document.getElementById('coursePageButton')
      const coursePageButton2 = document.getElementById('coursePageButton2')
-
-
-   
-     btnNewUser.addEventListener('click', () => {
-        pageUser.classList.add('hidden')
-         formPage.classList.remove('hidden')
-     })
-     backBtn.addEventListener('click', () => {
-        pageUser.classList.remove('hidden')
-         formPage.classList.add('hidden')
-     })
-  
-
      
+     
+     
+     btnNewUser.addEventListener('click', () => {
+         pageUser.classList.add('hidden')
+         formPage.classList.remove('hidden')
+        })
+        backBtn.addEventListener('click', () => {
+            pageUser.classList.remove('hidden')
+            formPage.classList.add('hidden')
+        })
+        
+        btnTrainingTechSheet.addEventListener('click', () => {
+            formTrainingTSheet.classList.remove('hidden')
+            pageTraining.classList.add('hidden')
+        })
+        backButtonTrainingPage.addEventListener('click', () => {
+            formTrainingTSheet.classList.add('hidden')
+            pageTraining.classList.remove('hidden')
+        })
+
+        btnCourseCall.addEventListener('click', () => {
+            formCourseCall.classList.remove('hidden')
+            pageCourse.classList.add('hidden')
+        })
+
+        backCoursePageButton.addEventListener('click', () =>{
+            formCourseCall.classList.add('hidden')
+            pageCourse.classList.remove('hidden')
+        })
+
+     const paginationSideBar = () => {
         sideBarUserPage.addEventListener('click', () => {
             pageUser.classList.remove('hidden')
             pageTraining.classList.add('hidden')
@@ -62,19 +83,12 @@ export function pagination() {
             pageTraining.classList.add('hidden')
             pageUser.classList.add('hidden')
         })
-    
+     }
+     paginationSideBar()
     
 
+
     
-        btnTrainingTechSheet.addEventListener('click', () => {
-            formTrainingTSheet.classList.remove('hidden')
-            pageTraining.classList.add('hidden')
-        })
-        backButtonTrainingPage.addEventListener('click', () => {
-            formTrainingTSheet.classList.add('hidden')
-            pageTraining.classList.remove('hidden')
-        })
-   
      
 
 }
