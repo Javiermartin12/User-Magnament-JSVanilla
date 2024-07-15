@@ -9,13 +9,13 @@
 </head>
 <body>
                                           <!-- User board-->
-    <div class="container hidden main" id="main--container">
+    <div class="container  main" id="userPage">
         <div class="sideBar">
             <h1>User Manage </h1>
             <h2>Dashboard</h2>
             <p id="">User</p>
-            <p id="trainingPage">Training </p>
-            <p id="coursePage">Course</p>
+            <p id="trainingPageButton">Training </p>
+            <p id="coursePageButton">Course</p>
         </div>
         <div class="containerRight">
             <div class="containerHeader">
@@ -70,13 +70,13 @@
     </div>
                                            <!-- User form-->
                                             <!-- trainng page-->
-    <div class="container main" id="secondary--container">
+    <div class="container hidden main" id="trainingPage">
         <div class="sideBar">
             <h1>User Manage </h1>
             <h2>Dashboard</h2>
-            <p id="userPage">User</p>
-            <p id="">Training</p>
-            <p id="coursePage">Course</p>
+            <p id="userPageButton">User</p>
+            <p id="" >Training</p>
+            <p id="coursePageButton2">Course</p>
         </div>
         <div class="containerRight">
             <div class="containerHeader">
@@ -172,6 +172,41 @@
         
     </div>
                                                        <!-- training form-->
+                                                        <!-- course page-->
+     <div class="container hidden main" id="coursePage">
+        <div class="sideBar">
+            <h1>User Manage </h1>
+            <h2>Dashboard</h2>
+            <p id="userPageButton2">User</p>
+            <p id="trainingPageButton2">Training</p>
+            <p id="">Course</p>
+        </div>
+        <div class="containerRight">
+            <div class="containerHeader">
+                <div class="topContainer">
+                    <h2 class="titleHeader">Course Page</h2>
+                    <input type="button" value="+ Course Call" class="button newUserInput" id="btnCourseCall">
+                </div>
+                <div class="bottomContainer">
+                    <input type="search" name="search user" id="" placeholder="Search">
+                </div>
+            </div>
+            <main class="containerMain">
+                
+            </main>
+        </div> 
+    </div>
+                                                        <!-- course page-->
+                                                        <!-- course form-->
+     <div class="containerForm hidden --formUser" id="formUser">
+        <form  class="createUser" id="createUser">
+                
+            <button type="button" class="button --secondaryBtn submitButton" id="backForm">Back</button>
+            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+        </form>
+        
+    </div>
+                                                        <!-- course form-->
     <script type="module" src="./JS/app.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 export function pagination() {
      //Pages
-     const pageUserMain = document.getElementById('main--container')
-    const pageTraining = document.getElementById('secondary--container')
+     const pageUser = document.getElementById('userPage')
+    const pageTraining = document.getElementById('trainingPage')
+    const pageCourse = document.getElementById('coursePage')
     //Form pages
      const formPage = document.getElementById('formUser')
      const btnNewUser = document.getElementById('newUserInput')
@@ -10,44 +11,71 @@ export function pagination() {
      const formTrainingTSheet = document.getElementById('formTrainingTSheet')
      const backButtonTrainingPage = document.getElementById('backFormTraining')
      //Button sideBar
-     const sideBarUserPage = document.getElementById('userPage')
-     const sideBarTrainigPage = document.getElementById('trainingPage')
-     const sideBarCoursePage = document.getElementById('coursePage')
+     const sideBarUserPage = document.getElementById('userPageButton')
+     const userPageButton2 = document.getElementById('userPageButton2')
+     const sideBarTrainigPage = document.getElementById('trainingPageButton')
+     const trainingPageButton2 = document.getElementById('trainingPageButton2')
+     const sideBarCoursePage = document.getElementById('coursePageButton')
+     const coursePageButton2 = document.getElementById('coursePageButton2')
 
-   const buttonewUser = () => {
-     btnNewUser.addEventListener('click', function(){
-        pageUserMain.classList.add('hidden')
+
+   
+     btnNewUser.addEventListener('click', () => {
+        pageUser.classList.add('hidden')
          formPage.classList.remove('hidden')
      })
-     backBtn.addEventListener('click', function(){
-        pageUserMain.classList.remove('hidden')
+     backBtn.addEventListener('click', () => {
+        pageUser.classList.remove('hidden')
          formPage.classList.add('hidden')
-     })}
-     buttonewUser()
+     })
+  
 
-     const sideBarPagination = () => {
-        sideBarUserPage.addEventListener('click',function () {
-            pageUserMain.classList.remove('hidden')
+     
+        sideBarUserPage.addEventListener('click', () => {
+            pageUser.classList.remove('hidden')
             pageTraining.classList.add('hidden')
+            pageCourse.classList.add('hidden')
         })
-        sideBarTrainigPage.addEventListener('click', ()=>{
-            pageUserMain.classList.add('hidden')
+        userPageButton2.addEventListener('click', () => {
+            pageUser.classList.remove('hidden')
+            pageTraining.classList.add('hidden')
+            pageCourse.classList.add('hidden')
+        })
+        sideBarTrainigPage.addEventListener('click', () => {
             pageTraining.classList.remove('hidden')
+            pageCourse.classList.add('hidden')
+            pageUser.classList.add('hidden')
+            
         })
-    }
-    sideBarPagination()
+        trainingPageButton2.addEventListener('click', () => {
+            pageTraining.classList.remove('hidden')
+            pageCourse.classList.add('hidden')
+            pageUser.classList.add('hidden')
+        })
+        coursePageButton2.addEventListener('click', () => {
+            pageCourse.classList.remove('hidden')
+            pageTraining.classList.add('hidden')
+            pageUser.classList.add('hidden')
+        })
+        sideBarCoursePage.addEventListener('click', () => {
+            pageCourse.classList.remove('hidden')
+            pageTraining.classList.add('hidden')
+            pageUser.classList.add('hidden')
+        })
+    
+    
 
-    const buttonChangeToTrainingTSheet = () => {
-        btnTrainingTechSheet.addEventListener('click', () =>{
+    
+        btnTrainingTechSheet.addEventListener('click', () => {
             formTrainingTSheet.classList.remove('hidden')
             pageTraining.classList.add('hidden')
         })
-        backButtonTrainingPage.addEventListener('click', () =>{
+        backButtonTrainingPage.addEventListener('click', () => {
             formTrainingTSheet.classList.add('hidden')
             pageTraining.classList.remove('hidden')
         })
-    }
-    buttonChangeToTrainingTSheet()
+   
      
 
 }
+pagination()
