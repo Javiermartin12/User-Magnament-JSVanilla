@@ -8,6 +8,7 @@ export function pagination() {
      const backBtn = document.getElementById('backForm')
      const btnTrainingTechSheet = document.getElementById('btnTrainingTechSheet')
      const formTrainingTSheet = document.getElementById('formTrainingTSheet')
+     const backButtonTrainingPage = document.getElementById('backFormTraining')
      //Button sideBar
      const sideBarUserPage = document.getElementById('userPage')
      const sideBarTrainigPage = document.getElementById('trainingPage')
@@ -40,8 +41,10 @@ export function pagination() {
         btnTrainingTechSheet.addEventListener('click', () =>{
             formTrainingTSheet.classList.remove('hidden')
             pageTraining.classList.add('hidden')
-            
-           
+        })
+        backButtonTrainingPage.addEventListener('click', () =>{
+            formTrainingTSheet.classList.add('hidden')
+            pageTraining.classList.remove('hidden')
         })
     }
     buttonChangeToTrainingTSheet()
