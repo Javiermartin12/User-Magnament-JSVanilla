@@ -1,6 +1,7 @@
 .newUserInput{
     margin: 1rem;
 }
+input[type="url"],
 input[type="search"],
 input[type="text"],
 input[type="number"],
@@ -20,6 +21,7 @@ textarea {
 input[type="search"]{
     width: 25%;
 }
+input[type="url"]:focus,
 input[type="text"]:focus,
 input[type="search"]:focus,
 input[type="email"]:focus,

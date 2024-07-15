@@ -50,19 +50,19 @@
     <div class="containerForm hidden --formUser" id="formUser">
         <form  class="createUser" id="createUser">
                 <label for="idUser" class=" labelColum idUserLabel">ID:</label>
-                <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id">
-                <span id="idError successMessage" class="error-message success-message"></span>
+                    <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id">
+                        <span id="idError successMessage" class="error-message success-message"></span>
                 <label for="userName" class="labelColum labelUserName">User Name:</label>
-                <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name" autocomplete="name">
-                <span id="nameError successMessage" class="error-message success-message"></span>
+                    <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name" autocomplete="name">
+                         <span id="nameError successMessage" class="error-message success-message"></span>
                 <label for="inputEmail" class="labelColum labelEmail">Email:</label>
-                <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email" autocomplete="email">
-                <span id="emailError successMessage" class="error-message success-message"></span>
+                     <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email" autocomplete="email">
+                        <span id="emailError successMessage" class="error-message success-message"></span>
                 <label for="usersFriends" class=" labelColum">Friends:</label>
-                <select name="user friends" class="inputFormUser" id="usersFriends" multiple></select>
-                <span id="passwordError successMessage" class="error-message success-message"></span>
+                    <select name="user friends" class="inputFormUser" id="usersFriends" multiple></select>
+                        <span id="passwordError successMessage" class="error-message success-message"></span>
                 <label for="inputPassword" class=" labelColum labelPassword">Password:</label>
-                <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" >
+                    <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" >
             <button type="button" class="button --secondaryBtn submitButton" id="backForm">Back</button>
             <button type="submit" class="button submitButton" id="submitButton">Submit</button>
         </form>
@@ -95,13 +95,79 @@
     </div>
                                                      <!-- trainng page-->
                                                       <!-- trainng form-->
-    <div class="containerForm hidden" id="formTrainingTSheet">
+    <div class="containerForm trainigForm hidden" id="formTrainingTSheet">
         <form  class="createUser" id="createUser">
             <label for="trainingName" class="labelColum">Trainig name:</label> 
-            <input type="text" name="Training name" id="trainingName" placeholder="Training Name"> 
-            <label for=""></label> 
+                <input type="text" name="TrainingName" id="trainingName" placeholder="Training Name"> 
 
-           
+            <label for="unitsServices" class="labelColum">Units services:</label>
+                <select id="unitsServices" name="unitsServices"  multiple >
+                    <option value="unitA">Unit A</option>
+                    <option value="unitB">Unit B</option>
+                    <option value="unitC">Unit C</option>
+                </select>
+
+            <label for="trainingPlan" class="labelColum">Training Plan/Program:</label>
+                <input type="file" name="trainingPlan" id="trainingPlan"  accept=".pdf,.doc,.docx">
+
+            <label for="version" class="labelColum">Version:</label>
+                <input type="number" name="version" id="version" placeholder="Version">
+
+            <label for="typeOfTraining" class="labelColum">Type of Training:</label>
+                <select id="typeOfTraining" name="typeOfTraining"  multiple>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+
+            <label for="duration" class="labelColum">Duration(hours):</label>
+                <input type="number" id="duration" name="duration">
+
+            <label for="evaluationType" class="labelColum">Evaluation Type:</label>
+                <select id="evaluationType" name="evaluationType" >
+                <option value="TA">TA</option>
+                <option value="TB">TB</option>
+                <option value="TC">TC</option>
+                </select>
+
+            <label for="objectives" class="labelColum">Objectives:</label>
+                <textarea id="objectives" name="objectives" ></textarea>
+
+            <label for="comments" class="labelColum">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+            <label for="students" class="labelColum">Students:</label>
+                <select id="students" name="students" multiple>
+                    <option value="roleA">Role A</option>
+                    <option value="roleB">Role B</option>
+                    <option value="roleC">Role C</option>
+                </select>
+            
+            <label for="theoreticalInstructors" class="labelColum">Theoretical Instructors:</label>
+                <select id="theoreticalInstructors" name="theoreticalInstructors" multiple>
+                    <option value="roleA">Role A</option>
+                    <option value="roleB">Role B</option>
+                    <option value="roleC">Role C</option>
+                </select>
+            
+            <label for="instructors" class="labelColum">Instructors:</label>
+                <select id="instructors" name="instructors" multiple>
+                    <option value="roleA">Role A</option>
+                    <option value="roleB">Role B</option>
+                </select>
+
+            <label for="assessors" class="labelColum">Assessors:</label>
+                <select id="assessors" name="assessors" multiple>
+                    <option value="roleA">Role A</option>
+                    <option value="roleB">Role B</option>
+                </select>
+
+            <label for="survey" class="labelColum">Survey:</label>
+                <input type="url" id="survey" name="survey">
+
+            <button type="button" class="button --secondaryBtn submitButton" id="backForm">Back</button>
+            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
         </form>
         
     </div>
