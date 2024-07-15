@@ -1,3 +1,7 @@
 .trainigForm{
     overflow-y: scroll;
+    height: 70%;
+}
+.trainingButton{
+    margin: 0.5rem;
 }
