@@ -18,23 +18,23 @@ export const postTraining= () => {
         const assessors = document.getElementById('assessors').value
         const survey = document.getElementById('survey').value
 
-        if (!trainingName || !unitsServices || !trainingPlan || !typeOfTraining|| !duration || !evaluationType || !objectives || !comments 
+        if (!trainingName || !unitsServices || !typeOfTraining|| !duration || !evaluationType || !objectives || !comments 
              || !students  || !theoreticalInstructors || !instructors || !assessors || !survey) {
             alert('Please complete the form');
             return;
         }
         const data = { trainingName,
-             unitsServices,
+             unitsServices: [],
               trainingPlan,
                typeOfTraining,
                 duration,
                  evaluationType,
                   objectives, 
                   comments,
-                  students,
+                  students: [],
                   theoreticalInstructors, 
                   instructors,
-                  assessors, 
+                  assessors: [], 
                   survey }
         
                   try {

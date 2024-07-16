@@ -1,6 +1,10 @@
 .trainigForm{
+    
     overflow-y: scroll;
-    height: 70%;
+    height: 80%;
+}
+.createTraining{
+    height: 100%;
 }
 .trainingButton{
     margin: 0.5rem;

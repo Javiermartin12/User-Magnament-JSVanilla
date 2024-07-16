@@ -23,5 +23,23 @@
         "Juan"
       ]
     }
+  ],
+  "trainingTechnicalSheets": [
+    {
+      "id": "7e7e",
+      "trainingName": "CSS course",
+      "unitsServices": "unitA",
+      "trainingPlan": "",
+      "typeOfTraining": "A",
+      "duration": "6",
+      "evaluationType": "TA",
+      "objectives": "Learn css",
+      "comments": "No comments",
+      "students": "roleA",
+      "theoreticalInstructors": "roleA",
+      "instructors": "roleA",
+      "assessors": "roleA",
+      "survey": "https://www.google.es/"
+    }
   ]
 }
