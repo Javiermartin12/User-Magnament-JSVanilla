@@ -44,11 +44,17 @@ export const getUsers = async () => {
             row.appendChild(friendsCell)
 
             const deleteCell = document.createElement('td');
+            const editButton = document.createElement('button');
+            editButton.textContent = 'Update'
+            // editButton.addEventListener('click', async() => {
+            //     await updateUser(user)
+            // })
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
             deleteButton.addEventListener('click', async() => {
                 await deleteUser(user.id)
             })
+            deleteCell.appendChild(editButton)
             deleteCell.appendChild(deleteButton)
             row.appendChild(deleteCell)
 
