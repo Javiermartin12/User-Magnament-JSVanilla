@@ -6,6 +6,7 @@
 @import 'CSS/mainContainer.css';
 @import 'CSS/sideBar.css';
 @import 'CSS/formTrainingTSheet.css';
+@import 'CSS/formCourse.css';
 
 *{
     margin: 0;

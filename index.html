@@ -9,7 +9,7 @@
 </head>
 <body>
                                           <!-- User board-->
-    <div class="container  main" id="userPage">
+    <div class="container hidden main" id="userPage">
         <div class="sideBar">
             <h1>User Manage </h1>
             <h2>Dashboard</h2>
@@ -122,7 +122,7 @@
                 </select>
 
             <label for="duration" class="labelColum">Duration(hours):</label>
-                <input type="number" id="duration" name="duration">
+                <input type="number" id="duration" name="duration" placeholder="Hours">
 
             <label for="evaluationType" class="labelColum">Evaluation Type:</label>
                 <select id="evaluationType" name="evaluationType" >
@@ -132,10 +132,10 @@
                 </select>
 
             <label for="objectives" class="labelColum">Objectives:</label>
-                <textarea id="objectives" name="objectives" ></textarea>
+                <textarea id="objectives" name="objectives" placeholder="Objectives" ></textarea>
 
             <label for="comments" class="labelColum">Comments:</label>
-                <textarea id="comments" name="comments"></textarea>
+                <textarea id="comments" name="comments" placeholder="Comments"></textarea>
 
             <label for="students" class="labelColum">Students:</label>
                 <select id="students" name="students" multiple>
@@ -164,7 +164,7 @@
                 </select>
 
             <label for="survey" class="labelColum">Survey:</label>
-                <input type="url" id="survey" name="survey">
+                <input type="url" id="survey" name="survey" placeholder="Url">
 
             <button type="button" class="button --secondaryBtn trainingButton submitButton" id="backFormTraining">Back</button>
             <button type="submit" class="button trainingButton submitButton" id="submitButtonTraining">Submit</button>
@@ -198,10 +198,42 @@
     </div>
                                                         <!-- course page-->
                                                         <!-- course form-->
-     <div class="containerForm hidden --formUser" id="formCourseCall">
+     <div class="containerForm courseForm --formUser" id="formCourseCall">
         <form  class="createUser" id="createUser">
+            <label for="convocationTrainingName"class="labelColum">Training Name:</label>
+                <select id="convocationTrainingName"  name="convocationTrainingName"  >
+                </select>   
+
+            <label for="convocationUnitService" class="labelColum">Unit-Service:</label>
+                <select id="convocationUnitService" name="convocationUnitService" >
+                </select>  
                 
-            <button type="button" class="button --secondaryBtn submitButton" id="backCoursePageButton">Back</button>
+            <label for="startDate" class="labelColum">Start Date:</label>
+                <input type="date" id="startDate" name="startDate">
+
+            <label for="endDate" class="labelColum">End Date:</label>
+                <input type="date" id="endDate" name="endDate">
+
+            <label for="communicateDaysBefore" class="labelColum">Communicate 3 days before the start of the course:</label>
+                <input type="number" id="communicateDaysBefore" name="communicateDaysBefore" placeholder="Communicate Days Before" >
+
+            <label for="timetable" class="labelColum">Timetable:</label>
+                <textarea id="timetable" name="timetable" placeholder="Time table"></textarea>
+
+            <label for="convocationTheoreticalInstructor" class="labelColum">Theoretical Instructor:</label>
+                <select id="convocationTheoreticalInstructor" name="convocationTheoreticalInstructor"  multiple>
+                </select>
+
+            <label for="convocationInstructors" class="labelColum">Instructors:</label>
+                <select id="convocationInstructors" name="convocationInstructors" multiple >
+                </select>
+
+            <label for="convocationAssessor" class="labelColum">Assessor:</label>
+                <select id="convocationAssessor" name="convocationAssessor" multiple >
+                    
+                </select>
+
+            <button type="button" class="button --secondaryBtn trainingButton submitButton" id="backCoursePageButton">Back</button>
             <button type="submit" class="button submitButton" id="submitButton">Submit</button>
         </form>
         
