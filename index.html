@@ -88,8 +88,28 @@
                     <input type="search" name="search user" id="search" placeholder="Search">
                 </div>
             </div>
-            <main class="containerMain">
-                
+            <main class="containerMain trainingTableContainer">
+                <table id="trainningTable" class="userTable">
+                    <thead>
+                        <tr>
+                            <th>Training Name</th>
+                            <th>Units Services</th>
+                            <th>Training Plan</th>
+                            <th>TypeOf Training</th>
+                            <th>Duration</th>
+                            <th>Rvaluation Type</th>
+                            <th>Objectives</th>
+                            <th>Comments</th>
+                            <th>Students</th>
+                            <th>Theoretical Instructors</th>
+                            <th>Instructors</th>
+                            <th>Assessors</th>
+                            <th>Survey</th>
+                        </tr>
+                    </thead>
+                    <tbody class="styleTable">
+                    </tbody>
+                </table>
             </main>
         </div> 
     </div>
@@ -97,7 +117,7 @@
                                                       <!-- trainng form-->
     <div class="containerForm trainigForm hidden" id="formTrainingTSheet">
         <form  class="createTraining" id="formCreateTraining">
-            
+
             <label for="trainingName" class="labelColum">Trainig name:</label> 
                 <input type="text" name="TrainingName" id="trainingName" placeholder="Training Name"> 
 
@@ -193,7 +213,20 @@
                 </div>
             </div>
             <main class="containerMain">
-                
+                <table id="userTable" class="userTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Friends</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="styleTable">
+                    </tbody>
+                </table>
             </main>
         </div> 
     </div>
