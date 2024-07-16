@@ -3,6 +3,7 @@ import { pagination } from "./component/pagination.js"
 import { postUser } from "./services/userServices/postUser.js"
 import { getFriends } from "./services/userServices/getFriends.js"
 import { postTraining } from "./services/trainingServices/postTraining.js"
+import { getTrainingTSheets } from "./services/trainingServices/getTraningTSheet.js"
 document.addEventListener('DOMContentLoaded', () =>{
     pagination()
     postUser()
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     getFriends()
 
     postTraining()
-    
+    getTrainingTSheets()
     
 })
 
