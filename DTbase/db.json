@@ -49,6 +49,22 @@
       "instructors": "roleA",
       "assessors": "roleA",
       "survey": "https://www.google.es/"
+    },
+    {
+      "id": "852f",
+      "trainingName": "HTML course",
+      "unitsServices": [],
+      "trainingPlan": "",
+      "typeOfTraining": "B",
+      "duration": "6",
+      "evaluationType": "TB",
+      "objectives": "None",
+      "comments": "None",
+      "students": [],
+      "theoreticalInstructors": "roleA",
+      "instructors": "roleA",
+      "assessors": [],
+      "survey": "https://www.google.es/"
     }
   ]
 }
