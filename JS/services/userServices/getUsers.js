@@ -1,5 +1,5 @@
 import { deleteUser } from "../userServices/deleteUser.js";
-
+import { updateUser } from "./updateUser.js";
 export const getUsers = async () => {
 
     try {
@@ -46,9 +46,9 @@ export const getUsers = async () => {
             const deleteCell = document.createElement('td');
             const editButton = document.createElement('button');
             editButton.textContent = 'Update'
-            // editButton.addEventListener('click', async() => {
-            //     await updateUser(user)
-            // })
+            editButton.addEventListener('click', () => {
+                 updateUser(user)
+            })
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
             deleteButton.addEventListener('click', async() => {

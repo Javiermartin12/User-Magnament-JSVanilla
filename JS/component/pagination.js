@@ -1,6 +1,6 @@
 export function pagination() {
      //Pages
-     const pageUser = document.getElementById('userPage')
+    const pageUser = document.getElementById('userPage')
     const pageTraining = document.getElementById('trainingPage')
     const pageCourse = document.getElementById('coursePage')
     //Form pages
@@ -13,6 +13,7 @@ export function pagination() {
      const formCourseCall = document.getElementById('formCourseCall')
      const btnCourseCall = document.getElementById('btnCourseCall')
      const backCoursePageButton = document.getElementById('backCoursePageButton')
+    //  const formUpdateUser = documen.getElementById('formUpdateUser')
      //Button sideBar
      const sideBarUserPage = document.getElementById('userPageButton')
      const userPageButton2 = document.getElementById('userPageButton2')

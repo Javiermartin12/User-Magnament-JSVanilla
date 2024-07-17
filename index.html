@@ -9,7 +9,7 @@
 </head>
 <body>
                                           <!-- User board-->
-    <div class="container hidden main" id="userPage">
+    <div class="container  main" id="userPage">
         <div class="sideBar">
             <h1>User Manage </h1>
             <h2>Dashboard</h2>
@@ -69,8 +69,31 @@
         
     </div>
                                            <!-- User form-->
+                                            <!-- User form update-->
+    <div class="containerForm hidden" id="formUpdateUser">                                    
+        <form id="editUserForm">
+            <label for="editIdUser" class="labelColum">ID:</label>
+                 <input type="text" id="editIdUser" name="id" readonly>
+
+             <label for="editUserName" class="labelColum">Name:</label>
+                    <input type="text" id="editUserName" name="name" required>
+
+             <label for="editInputEmail" class="labelColum">Email:</label>
+                 <input type="email" id="editInputEmail" name="email" required>
+
+             <label for="editInputPassword" class="labelColum">Password:</label>
+                    <input type="password" id="editInputPassword" name="password" required>
+
+             <label for="editUsersFriends" class="labelColum">Friends:</label>
+                 <select id="editUsersFriends" name="friends" multiple></select>
+
+                    <button type="button" class="--secondaryBtn button" >Back</button>
+                     <button type="submit"  class="button  submitButton">Update User</button>
+        </form>
+    </div>  
+                                            <!-- User form update-->
                                             <!-- trainng page-->
-    <div class="container  main" id="trainingPage">
+    <div class="container hidden main" id="trainingPage">
         <div class="sideBar">
             <h1>User Manage </h1>
             <h2>Dashboard</h2>
@@ -233,7 +256,7 @@
                                                         <!-- course page-->
                                                         <!-- course form-->
      <div class="containerForm hidden courseForm --formUser" id="formCourseCall">
-        <form  class="createUser" id="createUser">
+        <form  class="createCourse" id="createCourse">
             <label for="convocationTrainingName"class="labelColum">Training Name:</label>
                 <select id="convocationTrainingName"  name="convocationTrainingName"  >
                 </select>   
@@ -268,7 +291,7 @@
                 </select>
 
             <button type="button" class="button --secondaryBtn trainingButton submitButton" id="backCoursePageButton">Back</button>
-            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+            <button type="submit" class="button submitButton" id="">Submit</button>
         </form>
         
     </div>
