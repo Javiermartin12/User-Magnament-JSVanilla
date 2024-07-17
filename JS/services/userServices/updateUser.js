@@ -1,29 +1,29 @@
-const editUserModal = document.getElementById('editUserModal');
+
 const editUserForm = document.getElementById('editUserForm');
-const pageUser = document.getElementById('userPage')
+
 export const updateUser = (users) => {
-    console.log('User passed to updateUser:', users);
-    if (!users) {
-        console.error('User is undefined');
-        return;
-    }
+    
     document.getElementById('editIdUser').value = users.id
     document.getElementById('editUserName').value = users.name
     document.getElementById('editInputEmail').value = users.email
     document.getElementById('editInputPassword').value = users.password
     document.getElementById('editUsersFriends').value = users.friends
     //clear existing options
-    // const editUsersFriends = document.getElementById('editUsersFriends')
-    // editUsersFriends.innerHTML = ''
+    const editUsersFriends = document.getElementById('editUsersFriends')
+   
 
     fetch('http://localhost:3000/users')
         .then(response => response.json())
         .then(users => {
+           
             users.forEach(friend => {
+
                 const option = document.createElement('option');
                 option.value = friend.id
+
                 option.textContent = friend.name
-                if(users.friends.includes(friend.id)){
+
+                if (users.friends.includes(friend.id)) {
                     option.selected = true;
                 }
 

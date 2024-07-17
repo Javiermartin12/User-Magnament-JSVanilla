@@ -16,10 +16,21 @@
     },
     {
       "id": "3",
-      "name": "sergio",
-      "email": "ser@gmail.com",
+      "name": "Alex",
+      "email": "@gmail.com",
       "password": "1234",
-      "friends": []
+      "friends": [
+        "Oliver"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "juan",
+      "email": "@gmiail.com",
+      "password": "123",
+      "friends": [
+        "Alex"
+      ]
     }
   ],
   "trainingTechnicalSheets": [

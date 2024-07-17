@@ -7,7 +7,10 @@ export const getUsers = async () => {
     try {
         const response = await fetch('http://localhost:3000/users')
         const users = await response.json()
-        
+        if (!Array.isArray(users) || users.length === 0) {
+            console.error('No se encontraron usuarios');
+            return;
+        }
         const usersTableBody = document.querySelector('#userTable tbody')
         
        
@@ -53,7 +56,13 @@ export const getUsers = async () => {
                 console.log('User clicked for update:', user);
                  pageUser .classList.add('hidden')
                  formUpdateUser.classList.remove('hidden')
-                 updateUser(user)
+                 const userToUpdate = users.find(u => u.id === user.id);
+
+                 if (userToUpdate) {
+                    updateUser(userToUpdate);
+                } else {
+                    console.error('Usuario no encontrado');
+                }
             })
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
