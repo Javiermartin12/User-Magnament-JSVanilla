@@ -9,7 +9,7 @@
     },
     {
       "id": "2",
-      "name": "Sergio",
+      "name": "Sergiooo",
       "email": "sergio@gmail.com",
       "password": "12345",
       "friends": []
@@ -19,9 +19,7 @@
       "name": "sergio",
       "email": "ser@gmail.com",
       "password": "1234",
-      "friends": [
-        "Juan"
-      ]
+      "friends": []
     }
   ],
   "trainingTechnicalSheets": [

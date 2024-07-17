@@ -13,7 +13,8 @@ export function pagination() {
      const formCourseCall = document.getElementById('formCourseCall')
      const btnCourseCall = document.getElementById('btnCourseCall')
      const backCoursePageButton = document.getElementById('backCoursePageButton')
-    //  const formUpdateUser = documen.getElementById('formUpdateUser')
+     const backBtnUserPage = document.getElementById('backBtnUserPage')
+     const formUpdateUser = document.getElementById('formUpdateUser')
      //Button sideBar
      const sideBarUserPage = document.getElementById('userPageButton')
      const userPageButton2 = document.getElementById('userPageButton2')
@@ -31,6 +32,10 @@ export function pagination() {
         backBtn.addEventListener('click', () => {
             pageUser.classList.remove('hidden')
             formPage.classList.add('hidden')
+        })
+        backBtnUserPage.addEventListener('click', () => {
+            pageUser.classList.remove('hidden')
+            formUpdateUser.classList.add('hidden')
         })
         
         btnTrainingTechSheet.addEventListener('click', () => {

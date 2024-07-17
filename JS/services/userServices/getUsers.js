@@ -1,5 +1,7 @@
 import { deleteUser } from "../userServices/deleteUser.js";
 import { updateUser } from "./updateUser.js";
+const pageUser = document.getElementById('userPage')
+const formUpdateUser = document.getElementById('formUpdateUser')
 export const getUsers = async () => {
 
     try {
@@ -44,9 +46,13 @@ export const getUsers = async () => {
             row.appendChild(friendsCell)
 
             const deleteCell = document.createElement('td');
+
             const editButton = document.createElement('button');
             editButton.textContent = 'Update'
             editButton.addEventListener('click', () => {
+                console.log('User clicked for update:', user);
+                 pageUser .classList.add('hidden')
+                 formUpdateUser.classList.remove('hidden')
                  updateUser(user)
             })
             const deleteButton = document.createElement('button');
