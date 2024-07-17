@@ -50,7 +50,7 @@
     <div class="containerForm hidden --formUser" id="formUser">
         <form  class="createUser" id="createUser">
                 <label for="idUser" class=" labelColum idUserLabel">ID:</label>
-                    <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" autocomplete="id">
+                    <input type="number" name="id" class="inputFormUser" id="idUser" placeholder="id" >
                         <span id="idError successMessage" class="error-message success-message"></span>
                 <label for="userName" class="labelColum labelUserName">User Name:</label>
                     <input type="text" name="Name"class="inputFormUser" id="userName" placeholder="name" autocomplete="name">
@@ -59,7 +59,7 @@
                      <input type="text" name="Email"class="inputFormUser" id="inputEmail" placeholder="Email" autocomplete="email">
                         <span id="emailError successMessage" class="error-message success-message"></span>
                 <label for="usersFriends" class=" labelColum">Friends:</label>
-                    <select name="user friends" class="inputFormUser" id="usersFriends" multiple></select>
+                    <select name="user friends" class="inputFormUser" id="usersFriends" multiple ></select>
                         <span id="passwordError successMessage" class="error-message success-message"></span>
                 <label for="inputPassword" class=" labelColum labelPassword">Password:</label>
                     <input type="text" name="Password"class="inputFormUser" id="inputPassword" placeholder="Password" >
@@ -76,18 +76,18 @@
                  <input type="text" id="editIdUser" name="id" readonly>
 
              <label for="editUserName" class="labelColum">Name:</label>
-                    <input type="text" id="editUserName" name="name" required>
+                    <input type="text" id="editUserName" name="name" >
 
              <label for="editInputEmail" class="labelColum">Email:</label>
-                 <input type="email" id="editInputEmail" name="email" required>
+                 <input type="email" id="editInputEmail" name="email" >
 
              <label for="editInputPassword" class="labelColum">Password:</label>
-                    <input type="password" id="editInputPassword" name="password" required>
+                    <input type="password" id="editInputPassword" name="password" >
 
              <label for="editUsersFriends" class="labelColum">Friends:</label>
                  <select id="editUsersFriends" name="friends" multiple></select>
 
-                    <button type="button" class="--secondaryBtn button" >Back</button>
+                    <button type="button" class="--secondaryBtn button" id="backBtnUserPage" >Back</button>
                      <button type="submit"  class="button  submitButton">Update User</button>
         </form>
     </div>  
