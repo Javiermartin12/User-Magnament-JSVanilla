@@ -26,10 +26,10 @@
     {
       "id": "4",
       "name": "juan",
-      "email": "@gmiail.com",
+      "email": "q@gmail.com",
       "password": "123",
       "friends": [
-        "Alex"
+        2
       ]
     }
   ],

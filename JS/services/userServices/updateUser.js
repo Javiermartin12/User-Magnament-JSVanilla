@@ -7,14 +7,13 @@ export const updateUser = (users) => {
     id.value = users.id
     const name = document.getElementById('editUserName')
     name.value = users.name
-   const email = document.getElementById('editInputEmail')
-   email.value = users.email
-   const password = document.getElementById('editInputPassword')
-   password.value = users.password
+    const email = document.getElementById('editInputEmail')
+    email.value = users.email
+    const password = document.getElementById('editInputPassword')
+    password.value = users.password
     const friends =document.getElementById('editUsersFriends')
     friends.value = users.friends
     //clear existing options
-    const editUsersFriends = document.getElementById('editUsersFriends')
    
 
     fetch('http://localhost:3000/users')
@@ -25,12 +24,10 @@ export const updateUser = (users) => {
 
                 const option = document.createElement('option');
                 option.value = friend.id
-
+                console.log(option)
                 option.textContent = friend.name
-
-                if (users.friends.includes(friend.id)) {
-                    option.selected = true;
-                }
+                console.log(option)
+               
 
                 editUsersFriends.appendChild(option)
                 
