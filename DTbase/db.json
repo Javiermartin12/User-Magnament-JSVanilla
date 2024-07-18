@@ -5,7 +5,9 @@
       "name": "Juan",
       "email": "Juan@gmail.com",
       "password": "1234",
-      "friends": []
+      "friends": [
+        "2"
+      ]
     },
     {
       "id": "2",
@@ -29,7 +31,7 @@
       "email": "q@gmail.com",
       "password": "123",
       "friends": [
-        2
+        "juan"
       ]
     }
   ],

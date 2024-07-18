@@ -56,13 +56,9 @@ export const getUsers = async () => {
                 console.log('User clicked for update:', user);
                  pageUser .classList.add('hidden')
                  formUpdateUser.classList.remove('hidden')
-                 const userToUpdate = users.find(u => u.id === user.id);
-
-                 if (userToUpdate) {
-                    updateUser(userToUpdate);
-                } else {
-                    console.error('Usuario no encontrado');
-                }
+                //  const userToUpdate = users.find(u => u.id === user.id);
+                updateUser(user)
+                
             })
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
