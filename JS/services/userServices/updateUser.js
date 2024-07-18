@@ -13,7 +13,7 @@ export const updateUser = (users) => {
     password.value = users.password
     const friends =document.getElementById('editUsersFriends')
     friends.value = users.friends
-    //clear existing options
+
    
 
     fetch('http://localhost:3000/users')
