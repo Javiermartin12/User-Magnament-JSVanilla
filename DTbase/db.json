@@ -6,7 +6,10 @@
       "email": "Juan@gmail.com",
       "password": "1234",
       "friends": [
-        "2"
+        "Juan",
+        "Sergiooo",
+        "Alex",
+        "juan"
       ]
     },
     {
@@ -14,15 +17,17 @@
       "name": "Sergiooo",
       "email": "sergio@gmail.com",
       "password": "12345",
-      "friends": []
+      "friends": [
+        "Juan"
+      ]
     },
     {
       "id": "3",
       "name": "Alex",
-      "email": "@gmail.com",
+      "email": "e@gmail.com",
       "password": "1234",
       "friends": [
-        "Oliver"
+        "Alex"
       ]
     },
     {
