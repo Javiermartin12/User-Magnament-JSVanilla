@@ -3,11 +3,16 @@ const editUserForm = document.getElementById('editUserForm');
 
 export const updateUser = (users) => {
     
-    document.getElementById('editIdUser').value = users.id
-    document.getElementById('editUserName').value = users.name
-    document.getElementById('editInputEmail').value = users.email
-    document.getElementById('editInputPassword').value = users.password
-    document.getElementById('editUsersFriends').value = users.friends
+    const id = document.getElementById('editIdUser')
+    id.value = users.id
+    const name = document.getElementById('editUserName')
+    name.value = users.name
+   const email = document.getElementById('editInputEmail')
+   email.value = users.email
+   const password = document.getElementById('editInputPassword')
+   password.value = users.password
+    const friends =document.getElementById('editUsersFriends')
+    friends.value = users.friends
     //clear existing options
     const editUsersFriends = document.getElementById('editUsersFriends')
    
