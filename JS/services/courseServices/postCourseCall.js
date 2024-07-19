@@ -1,5 +1,6 @@
 import { getTrainingNameToPopulate } from "./dinamicForm/getTrainingNameToPopulate.js"
 import { getUnitServiceToPopulate } from "./dinamicForm/getUnitServiceToPopulate.js"
+import { sendConvocation } from "./dinamicForm/sendConvocation.js"
 export const postCourseCall = () => {
     getTrainingNameToPopulate()
     getUnitServiceToPopulate()
@@ -16,6 +17,6 @@ export const postCourseCall = () => {
         const convocationTheoreticalInstructor = document.getElementById('convocationTheoreticalInstructor').value
         const convocationInstructors = document.getElementById('convocationInstructors').value
         const convocationAssessor = document.getElementById('convocationAssessor').value
-
+        sendConvocation()
     })
 }
