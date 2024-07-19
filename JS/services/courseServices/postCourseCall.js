@@ -1,9 +1,9 @@
 import { getTrainingNameToPopulate } from "./dinamicForm/getTrainingNameToPopulate.js"
-import { getUnitServiceToPopulate } from "./dinamicForm/getUnitServiceToPopulate.js"
+
 import { sendConvocation } from "./dinamicForm/sendConvocation.js"
 export const postCourseCall = () => {
     getTrainingNameToPopulate()
-    getUnitServiceToPopulate()
+
 
     const submitCourseCall = document.getElementById('submitCourseCall')
     submitCourseCall.addEventListener('click', async (event) =>{
