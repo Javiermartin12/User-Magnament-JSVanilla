@@ -7,8 +7,10 @@ export const getUsers = async () => {
     try {
         const response = await fetch('http://localhost:3000/users')
         const users = await response.json()
+
         if (!Array.isArray(users) || users.length === 0) {
-            console.error('No se encontraron usuarios');
+            console.error('There are no users')
+            alert('There are no users')
             return;
         }
         const usersTableBody = document.querySelector('#userTable tbody')
