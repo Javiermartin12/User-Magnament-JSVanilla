@@ -16,12 +16,45 @@ export const getCourseCall = async() => {
 
             const row = document.createElement('tr')
 
+            const trainingNameCell = document.createElement('td')
+            trainingNameCell.innerHTML = courseCall.convocationTrainingName
+            row.appendChild(trainingNameCell)
 
+            const convocationUnitServiceCell = document.createElement('td')
+            convocationUnitServiceCell.innerHTML = courseCall.convocationUnitService
+            row.appendChild(convocationUnitServiceCell)
 
+            const startDateCell = document.getElementById('td')
+            startDateCell.innerHTML = courseCall.startDate
+            row.appendChild(startDateCell)
 
-            
+            const endDateCell = document.getElementById('td')
+            endDateCell.innerHTML = courseCall.endDate
+            row.appendChild(endDateCell)
+
+            const communicateDaysBeforeCell = document.getElementById('td')
+            communicateDaysBeforeCell.innerHTML = courseCall.communicateDaysBefore
+            row.appendChild(communicateDaysBeforeCell)
+
+            const timetableCell = document.getElementById('td')
+            timetableCell.innerHTML = courseCall.timetable
+            row.appendChild(timetableCell)
+
+            const convocationTheoreticalInstructorCell = document.getElementById('td')
+            convocationTheoreticalInstructorCell.innerHTML = courseCall.convocationTheoreticalInstructor
+            row.appendChild(convocationTheoreticalInstructorCell)
+
+            const convocationInstructorsCell = document.getElementById('td')
+            convocationInstructorsCell.innerHTML = courseCall.convocationInstructors
+            row.appendChild(convocationInstructorsCell)
+
+            const convocationAssessorCell = document.getElementById('td')
+            convocationAssessorCell.innerHTML = courseCall.convocationAssessorCell
+            row.appendChild(convocationAssessorCell)
+
+            courseCallTable.appendChild(row)
         })
     } catch (error) {
-        
+        alert('Dont received courseCall')
     }
 }
