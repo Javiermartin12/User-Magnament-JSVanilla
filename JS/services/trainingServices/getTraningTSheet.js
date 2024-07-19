@@ -3,6 +3,11 @@ export const getTrainingTSheets = async () => {
     try {
         const response = await fetch('http://localhost:3000/trainingTechnicalSheets')
         const sheets = await response.json()
+        if (!Array.isArray(sheets) || sheets.length === 0) {
+            console.error('There are no sheets')
+            alert('There are no sheets')
+            return;
+        }
 
         const trainningTable = document.querySelector('#trainningTable tbody')
 
