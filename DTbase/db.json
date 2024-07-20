@@ -71,26 +71,5 @@
       "survey": ""
     }
   ],
-  "courseCall": [
-    {
-      "id": "f466",
-      "convocationTrainingName": "7e7e",
-      "convocationUnitService": [
-        "unitA"
-      ],
-      "startDate": "2024-07-22",
-      "endDate": "2024-07-24",
-      "communicateDaysBefore": "10",
-      "timetable": "no",
-      "convocationTheoreticalInstructor": [
-        "roleA"
-      ],
-      "convocationInstructors": [
-        "roleA"
-      ],
-      "convocationAssessor": [
-        "roleA"
-      ]
-    }
-  ]
+  "courseCall": []
 }
