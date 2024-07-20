@@ -26,7 +26,7 @@ export const postUser = () => {
             alert('Please complete the form');
             return;
         }
-        const data = { id, name, email, password,friends, friendsSelect}
+        const data = { id, name, email, password, friends, friendsSelect}
         
         try {
             const response = await fetch('http://localhost:3000/users', {
