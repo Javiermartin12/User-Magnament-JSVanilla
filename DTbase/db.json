@@ -72,6 +72,22 @@
       "instructors": "roleA",
       "assessors": [],
       "survey": "https://www.google.es/"
+    },
+    {
+      "id": "8c87",
+      "trainingName": "JS Course",
+      "unitsServices": [],
+      "trainingPlan": "",
+      "typeOfTraining": "A",
+      "duration": "3",
+      "evaluationType": "TC",
+      "objectives": "No",
+      "comments": "Yess",
+      "students": [],
+      "theoreticalInstructors": "roleB",
+      "instructors": "roleB",
+      "assessors": [],
+      "survey": ""
     }
   ],
   "courseCall": [

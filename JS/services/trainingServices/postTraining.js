@@ -19,7 +19,7 @@ export const postTraining= () => {
         const survey = document.getElementById('survey').value
 
         if (!trainingName || !unitsServices || !typeOfTraining|| !duration || !evaluationType || !objectives || !comments 
-             || !students  || !theoreticalInstructors || !instructors || !assessors || !survey) {
+             || !students  || !theoreticalInstructors || !instructors || !assessors) {
             alert('Please complete the form');
             return;
         }
