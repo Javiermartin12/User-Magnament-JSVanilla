@@ -1,0 +1,9 @@
+.userTable{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+}
+tbody{
+    padding: 1rem;
+}
