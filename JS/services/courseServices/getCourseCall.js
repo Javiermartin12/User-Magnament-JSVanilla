@@ -52,6 +52,17 @@ export const getCourseCall = async() => {
             convocationAssessorCell.innerHTML = courseCall.convocationAssessorCell
             row.appendChild(convocationAssessorCell)
 
+            const actionCell = document.createElement('td');
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete'
+            deleteButton.addEventListener('click', async ()=>{
+                
+            })
+
+            actionCell.appendChild(deleteButton)
+            row.appendChild(actionCell)
+
             courseCallTable.appendChild(row)
         })
     } catch (error) {

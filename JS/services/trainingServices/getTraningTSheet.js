@@ -1,4 +1,4 @@
-
+import { deleteTrainingTSheet } from "./deleteTriningTSheet.JS"
 export const getTrainingTSheets = async () => {
     try {
         const response = await fetch('http://localhost:3000/trainingTechnicalSheets')
@@ -66,7 +66,17 @@ export const getTrainingTSheets = async () => {
             surveyCell.innerHTML = sheet.survey
             row.appendChild(surveyCell)
 
+            const actionCell = document.createElement('td');
 
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete'
+            deleteButton.addEventListener('click', async ()=> {
+                await deleteTrainingTSheet(sheet.id)
+            })
+
+            actionCell.appendChild(deleteButton)
+            row.appendChild(actionCell)
+            
             trainningTable.appendChild(row)
         });
     } catch (error) {

@@ -50,7 +50,7 @@ export const getUsers = async () => {
             friendsCell.textContent = friends || 'No friends'
             row.appendChild(friendsCell)
 
-            const deleteCell = document.createElement('td');
+            const actionCell = document.createElement('td');
 
             const editButton = document.createElement('button');
             editButton.textContent = 'Update'
@@ -67,9 +67,9 @@ export const getUsers = async () => {
             deleteButton.addEventListener('click', async() => {
                 await deleteUser(user.id)
             })
-            deleteCell.appendChild(editButton)
-            deleteCell.appendChild(deleteButton)
-            row.appendChild(deleteCell)
+            actionCell.appendChild(editButton)
+            actionCell.appendChild(deleteButton)
+            row.appendChild(actionCell)
 
             usersTableBody.appendChild(row)
         })
