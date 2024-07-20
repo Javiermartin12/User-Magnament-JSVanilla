@@ -1,4 +1,4 @@
-
+import { deleteCourseCall } from "./deleteCourseCall.js"
 export const getCourseCall = async () => {
     try {
         const response = await fetch('http://localhost:3000/courseCall')
@@ -57,7 +57,7 @@ export const getCourseCall = async () => {
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete'
             deleteButton.addEventListener('click', async ()=>{
-                
+                await deleteCourseCall(courseCall.id)
             })
 
             actionCell.appendChild(deleteButton)
