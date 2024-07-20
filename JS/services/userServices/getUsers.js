@@ -11,7 +11,7 @@ export const getUsers = async () => {
         if (!Array.isArray(users) || users.length === 0) {
             console.error('There are no users')
             alert('There are no users')
-            return;
+            return
         }
         const usersTableBody = document.querySelector('#userTable tbody')
         
