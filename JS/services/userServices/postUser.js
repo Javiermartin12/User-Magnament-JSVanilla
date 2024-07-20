@@ -1,19 +1,17 @@
 import {checkIfIdExists} from '../userServices/getId.js'
 export const postUser = () => { 
 
-        document.getElementById('createUser').addEventListener('submit', async function(event){
+        document.getElementById('createUser').addEventListener('submit', async (event) =>{
         event.preventDefault()
 
         const id = document.getElementById('idUser').value
         const name = document.getElementById('userName').value
         const email = document.getElementById('inputEmail').value
         const password = document.getElementById('inputPassword').value
-        const friends = []
+        const friends =  Array.from(document.getElementById('usersFriends').selectedOptions).map(option => option.textContent)
+        
 
-        const friendsSelect = document.getElementById('usersFriends')
-        Array.from(friendsSelect.selectedOptions).forEach(option => {
-            friends.push(option.textContent)
-        })
+       
 
         const isIdExists = await checkIfIdExists(id)
 
@@ -26,7 +24,7 @@ export const postUser = () => {
             alert('Please complete the form');
             return;
         }
-        const data = { id, name, email, password, friends, friendsSelect}
+        const data = { id, name, email, password, friends}
         
         try {
             const response = await fetch('http://localhost:3000/users', {

@@ -6,10 +6,7 @@
       "email": "Juan@gmail.com",
       "password": "1234",
       "friends": [
-        "Juan",
-        "Sergiooo",
-        "Alex",
-        "juan"
+        "Sergiooo"
       ]
     },
     {
@@ -25,18 +22,18 @@
       "id": "3",
       "name": "Alex",
       "email": "e@gmail.com",
-      "password": "1234",
+      "password": "1234xtyb5cgc4656",
       "friends": [
-        "Alex"
+        "Juan"
       ]
     },
     {
       "id": "4",
-      "name": "juan",
-      "email": "q@gmail.com",
-      "password": "123",
+      "name": "jose",
+      "email": "j@gmail.com",
+      "password": "htrfbthvbycvbt",
       "friends": [
-        "juan"
+        "Sergiooo"
       ]
     }
   ],
@@ -56,6 +53,22 @@
       "instructors": "roleA",
       "assessors": "roleA",
       "survey": "https://www.google.es/"
+    },
+    {
+      "id": "4558",
+      "trainingName": "JS Course",
+      "unitsServices": [],
+      "trainingPlan": "",
+      "typeOfTraining": "A",
+      "duration": "3",
+      "evaluationType": "TB",
+      "objectives": "no",
+      "comments": "no",
+      "students": [],
+      "theoreticalInstructors": "roleC",
+      "instructors": "roleA",
+      "assessors": [],
+      "survey": ""
     }
   ],
   "courseCall": [

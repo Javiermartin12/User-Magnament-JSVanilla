@@ -1,4 +1,4 @@
-import { deleteTrainingTSheet } from "./deleteTriningTSheet.JS"
+import { deleteTrainingTSheet } from "./deleteTriningTSheet.js"
 export const getTrainingTSheets = async () => {
     try {
         const response = await fetch('http://localhost:3000/trainingTechnicalSheets')

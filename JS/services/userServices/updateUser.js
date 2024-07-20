@@ -38,7 +38,7 @@ export const updateUser = (users) => {
            const name = document.getElementById('editUserName').value 
            const email = document.getElementById('editInputEmail').value 
            const password = document.getElementById('editInputPassword').value 
-           const friends = Array.from(document.getElementById('editUsersFriends').selectedOptions).map(option => option.value)
+           const friends = Array.from(document.getElementById('editUsersFriends').selectedOptions).map(option => option.textContent)
     
            const updatedUser = { id, name, email, password, friends }
     
