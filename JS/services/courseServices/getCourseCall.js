@@ -1,5 +1,5 @@
 
-export const getCourseCall = async() => {
+export const getCourseCall = async () => {
     try {
         const response = await fetch('http://localhost:3000/courseCall')
         console.log(response)
@@ -11,7 +11,7 @@ export const getCourseCall = async() => {
         }
         console.log(courseCalls)
          
-        const courseCallTable = document.getElementById('#courseCallTable tbody')
+        const courseCallTable = document.querySelector('#courseCallTable tbody')
         courseCalls.forEach(courseCall => {
 
             const row = document.createElement('tr')
@@ -24,31 +24,31 @@ export const getCourseCall = async() => {
             convocationUnitServiceCell.innerHTML = courseCall.convocationUnitService
             row.appendChild(convocationUnitServiceCell)
 
-            const startDateCell = document.getElementById('td')
+            const startDateCell = document.createElement('td')
             startDateCell.innerHTML = courseCall.startDate
             row.appendChild(startDateCell)
 
-            const endDateCell = document.getElementById('td')
+            const endDateCell = document.createElement('td')
             endDateCell.innerHTML = courseCall.endDate
             row.appendChild(endDateCell)
 
-            const communicateDaysBeforeCell = document.getElementById('td')
+            const communicateDaysBeforeCell = document.createElement('td')
             communicateDaysBeforeCell.innerHTML = courseCall.communicateDaysBefore
             row.appendChild(communicateDaysBeforeCell)
 
-            const timetableCell = document.getElementById('td')
+            const timetableCell = document.createElement('td')
             timetableCell.innerHTML = courseCall.timetable
             row.appendChild(timetableCell)
 
-            const convocationTheoreticalInstructorCell = document.getElementById('td')
+            const convocationTheoreticalInstructorCell = document.createElement('td')
             convocationTheoreticalInstructorCell.innerHTML = courseCall.convocationTheoreticalInstructor
             row.appendChild(convocationTheoreticalInstructorCell)
 
-            const convocationInstructorsCell = document.getElementById('td')
+            const convocationInstructorsCell = document.createElement('td')
             convocationInstructorsCell.innerHTML = courseCall.convocationInstructors
             row.appendChild(convocationInstructorsCell)
 
-            const convocationAssessorCell = document.getElementById('td')
+            const convocationAssessorCell = document.createElement('td')
             convocationAssessorCell.innerHTML = courseCall.convocationAssessorCell
             row.appendChild(convocationAssessorCell)
 
@@ -66,6 +66,7 @@ export const getCourseCall = async() => {
             courseCallTable.appendChild(row)
         })
     } catch (error) {
-        alert('Dont received courseCall')
+        alert('Dont received courseCall', error)
+        console.log(error)
     }
 }
