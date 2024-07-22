@@ -12,7 +12,9 @@ export const postCourseCall =  () => {
     const submitCourseCall = document.getElementById('createCourse')
     submitCourseCall.addEventListener('submit', async (event) =>{
         event.preventDefault()
-        const convocationTrainingName = document.getElementById('convocationTrainingName').value
+        const convocationTrainingNameElement = document.getElementById('convocationTrainingName')
+        const trainingName = convocationTrainingNameElement.options[convocationTrainingNameElement.selectedIndex].textContent;
+        console.log(trainingName)
         console.log(convocationTrainingName)
         const convocationUnitService = Array.from(document.getElementById('convocationUnitService').selectedOptions).map(option => option.textContent)
         console.log(convocationUnitService)
@@ -38,8 +40,9 @@ export const postCourseCall =  () => {
             return
         }
 
-        const data = {convocationTrainingName,
-             convocationUnitService,
+        const data = {
+            convocationTrainingName,
+            convocationUnitService,
             startDate,
             endDate,
             communicateDaysBefore,
