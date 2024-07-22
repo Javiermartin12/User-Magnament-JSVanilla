@@ -55,10 +55,8 @@ export const getUsers = async () => {
             const editButton = document.createElement('button');
             editButton.textContent = 'Update'
             editButton.addEventListener('click', () => {
-                console.log('User clicked for update:', user);
                  pageUser .classList.add('hidden')
                  formUpdateUser.classList.remove('hidden')
-                //  const userToUpdate = users.find(u => u.id === user.id);
                 updateUser(user)
                 
             })

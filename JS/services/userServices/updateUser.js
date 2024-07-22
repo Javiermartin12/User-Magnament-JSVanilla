@@ -25,7 +25,6 @@ export const updateUser = (users) => {
                 const option = document.createElement('option');
                 option.value = friend.name
                 option.textContent = friend.name
-                console.log(option)
                 editUsersFriends.appendChild(option)
                 
             })
