@@ -35,25 +35,20 @@
       "friends": [
         "Sergiooo"
       ]
+    },
+    {
+      "id": "55",
+      "name": "elena",
+      "email": "e@gmail.com",
+      "password": "c5ybccb65cdcfxgc",
+      "friends": [
+        "Sergiooo",
+        "Alex",
+        "jose"
+      ]
     }
   ],
   "trainingTechnicalSheets": [
-    {
-      "id": "7e7e",
-      "trainingName": "CSS course",
-      "unitsServices": "unitA",
-      "trainingPlan": "",
-      "typeOfTraining": "A",
-      "duration": "6",
-      "evaluationType": "TA",
-      "objectives": "Learn css",
-      "comments": "No comments",
-      "students": "roleA",
-      "theoreticalInstructors": "roleA",
-      "instructors": "roleA",
-      "assessors": "roleA",
-      "survey": "https://www.google.es/"
-    },
     {
       "id": "4558",
       "trainingName": "JS Course",
@@ -67,6 +62,22 @@
       "students": [],
       "theoreticalInstructors": "roleC",
       "instructors": "roleA",
+      "assessors": [],
+      "survey": ""
+    },
+    {
+      "id": "2207",
+      "trainingName": "HTML course",
+      "unitsServices": [],
+      "trainingPlan": "",
+      "typeOfTraining": "A",
+      "duration": "4",
+      "evaluationType": "TB",
+      "objectives": "NO",
+      "comments": "NO",
+      "students": [],
+      "theoreticalInstructors": "roleA",
+      "instructors": "roleB",
       "assessors": [],
       "survey": ""
     }
