@@ -71,5 +71,26 @@
       "survey": ""
     }
   ],
-  "courseCall": []
+  "courseCall": [
+    {
+      "id": "5873",
+      "convocationTrainingName": "7e7e",
+      "convocationUnitService": [
+        "unitA"
+      ],
+      "startDate": "0001-01-01",
+      "endDate": "0001-01-01",
+      "communicateDaysBefore": "1",
+      "timetable": "no",
+      "convocationTheoreticalInstructor": [
+        "roleA"
+      ],
+      "convocationInstructors": [
+        "roleA"
+      ],
+      "convocationAssessor": [
+        "roleA"
+      ]
+    }
+  ]
 }
