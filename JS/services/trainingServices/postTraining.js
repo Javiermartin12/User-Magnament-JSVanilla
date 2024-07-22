@@ -5,17 +5,17 @@ export const postTraining= () => {
         event.preventDefault()
 
         const trainingName = document.getElementById('trainingName').value
-        const unitsServices = document.getElementById('unitsServices').value
+        const unitsServices = Array.from(document.getElementById('unitsServices').selectedOptions).map(option => option.textContent)
         const trainingPlan = document.getElementById('trainingPlan').value
-        const typeOfTraining = document.getElementById('typeOfTraining').value
+        const typeOfTraining = Array.from(document.getElementById('typeOfTraining').selectedOptions).map(option => option.textContent)
         const duration = document.getElementById('duration').value
         const evaluationType = document.getElementById('evaluationType').value
         const objectives = document.getElementById('objectives').value
         const comments = document.getElementById('comments').value
-        const students = document.getElementById('students').value
-        const theoreticalInstructors = document.getElementById('theoreticalInstructors').value
-        const instructors = document.getElementById('instructors').value
-        const assessors = document.getElementById('assessors').value
+        const students = Array.from(document.getElementById('students').selectedOptions).map(option => option.textContent)
+        const theoreticalInstructors = Array.from(document.getElementById('theoreticalInstructors').selectedOptions).map(option => option.textContent)
+        const instructors = Array.from(document.getElementById('instructors').selectedOptions).map(option => option.textContent)
+        const assessors = Array.from(document.getElementById('assessors').selectedOptions).map(option => option.textContent)
         const survey = document.getElementById('survey').value
 
         if (!trainingName || !unitsServices || !typeOfTraining|| !duration || !evaluationType || !objectives || !comments 
@@ -24,18 +24,18 @@ export const postTraining= () => {
             return;
         }
         const data = { trainingName,
-             unitsServices: [],
-              trainingPlan,
-               typeOfTraining,
-                duration,
-                 evaluationType,
-                  objectives, 
-                  comments,
-                  students: [],
-                  theoreticalInstructors, 
-                  instructors,
-                  assessors: [], 
-                  survey }
+             unitsServices,
+             trainingPlan,
+             typeOfTraining,
+             duration,
+             evaluationType,
+             objectives,
+             comments,
+             students,
+             theoreticalInstructors, 
+             instructors,
+             assessors, 
+             survey }
         
                   try {
                     const response = await fetch('http://localhost:3000/trainingTechnicalSheets', {

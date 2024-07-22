@@ -50,35 +50,103 @@
   ],
   "trainingTechnicalSheets": [
     {
-      "id": "4558",
-      "trainingName": "JS Course",
-      "unitsServices": [],
+      "id": "9515",
+      "trainingName": "HTML course",
+      "unitsServices": [
+        "Unit A",
+        "Unit C"
+      ],
       "trainingPlan": "",
-      "typeOfTraining": "A",
-      "duration": "3",
-      "evaluationType": "TB",
-      "objectives": "no",
-      "comments": "no",
-      "students": [],
-      "theoreticalInstructors": "roleC",
-      "instructors": "roleA",
-      "assessors": [],
+      "typeOfTraining": [
+        "A",
+        "B",
+        "C"
+      ],
+      "duration": "4",
+      "evaluationType": "TA",
+      "objectives": "No",
+      "comments": "No",
+      "students": [
+        "Role A",
+        "Role C"
+      ],
+      "theoreticalInstructors": [
+        "Role A",
+        "Role B"
+      ],
+      "instructors": [
+        "Role A",
+        "Role B"
+      ],
+      "assessors": [
+        "Role B"
+      ],
       "survey": ""
     },
     {
-      "id": "2207",
-      "trainingName": "HTML course",
-      "unitsServices": [],
+      "id": "74f0",
+      "trainingName": "CSS course",
+      "unitsServices": [
+        "Unit B",
+        "Unit C"
+      ],
       "trainingPlan": "",
-      "typeOfTraining": "A",
+      "typeOfTraining": [
+        "B",
+        "C",
+        "D"
+      ],
       "duration": "4",
       "evaluationType": "TB",
-      "objectives": "NO",
-      "comments": "NO",
-      "students": [],
-      "theoreticalInstructors": "roleA",
-      "instructors": "roleB",
-      "assessors": [],
+      "objectives": "No",
+      "comments": "No",
+      "students": [
+        "Role B"
+      ],
+      "theoreticalInstructors": [
+        "Role B"
+      ],
+      "instructors": [
+        "Role B"
+      ],
+      "assessors": [
+        "Role B"
+      ],
+      "survey": ""
+    },
+    {
+      "id": "4163",
+      "trainingName": "JS Course",
+      "unitsServices": [
+        "Unit C"
+      ],
+      "trainingPlan": "",
+      "typeOfTraining": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "duration": "4",
+      "evaluationType": "TC",
+      "objectives": "No",
+      "comments": "No",
+      "students": [
+        "Role A",
+        "Role C"
+      ],
+      "theoreticalInstructors": [
+        "Role A",
+        "Role C"
+      ],
+      "instructors": [
+        "Role A",
+        "Role B"
+      ],
+      "assessors": [
+        "Role A",
+        "Role B"
+      ],
       "survey": ""
     }
   ],
