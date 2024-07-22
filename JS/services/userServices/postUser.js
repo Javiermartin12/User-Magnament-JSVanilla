@@ -21,10 +21,14 @@ export const postUser = () => {
         if (!id || !name || !email || !password) {
             alert('Please complete the form');
             return
-        }
-        if (isIdExists) {
+        }else if(!Array.isArray(friends)){
+            addEventListener('La respuesta no es un array')
+            return
+        }else if(isIdExists) {
             alert(`ID ${id} already in use. Please choose other.`)
             return;
+        } else {
+            alert('nothing')
         }
 
         const data = { id, name, email, password, friends}
