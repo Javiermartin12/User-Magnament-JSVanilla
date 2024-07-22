@@ -23,3 +23,6 @@
 .--secondaryBtn{
     background-color: rgba(0, 0, 0, 0.6);
 }
+button, input, textarea, select{
+    cursor: pointer;
+}
