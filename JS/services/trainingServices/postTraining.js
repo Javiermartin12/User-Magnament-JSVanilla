@@ -1,7 +1,6 @@
-
 export const postTraining= () => {
     const formCreateTraining = document.getElementById('formCreateTraining')
-    formCreateTraining.addEventListener('submit', async (event) =>{
+        formCreateTraining.addEventListener('submit', async (event) =>{
         event.preventDefault()
 
         const trainingName = document.getElementById('trainingName').value
@@ -37,19 +36,18 @@ export const postTraining= () => {
              assessors, 
              survey }
         
-                  try {
-                    const response = await fetch('http://localhost:3000/trainingTechnicalSheets', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
+        try {
+             const response = await fetch('http://localhost:3000/trainingTechnicalSheets', {
+                method: 'POST',
+                headers: {
+                        'Content-Type': 'application/json'
                         },
-                        body: JSON.stringify(data)
-                    })
+                    body: JSON.stringify(data)
+                })
                     alert('Training saved correctly');
-                  } catch (error) {
-                    console.error('Error:', error);
-                    alert('There was a problem to signup training');
-                  }
-
+           } catch (error) {
+                console.error('Error:', error);
+                alert('There was a problem to signup training');
+             }
     })
 }

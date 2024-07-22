@@ -152,72 +152,42 @@
   ],
   "courseCall": [
     {
-      "id": "f6ed",
-      "convocationTrainingName": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
+      "id": "7b7b",
+      "convocationTrainingName": "CSS course",
+      "convocationUnitService": [
+        "Unit B"
+      ],
+      "startDate": "0001-11-11",
+      "endDate": "0001-11-11",
+      "communicateDaysBefore": "1",
+      "timetable": "NO",
+      "convocationTheoreticalInstructor": [
+        "Role B"
+      ],
+      "convocationInstructors": [
+        "Role B"
+      ],
+      "convocationAssessor": [
+        "Role B"
+      ]
+    },
+    {
+      "id": "00be",
+      "convocationTrainingName": "HTML course",
       "convocationUnitService": [
         "Unit A",
         "Unit C"
       ],
-      "startDate": "2024-07-22",
-      "endDate": "2024-07-23",
-      "communicateDaysBefore": "1",
-      "timetable": "NO",
-      "convocationTheoreticalInstructor": [
-        "Role B"
-      ],
-      "convocationInstructors": [
-        "Role A"
-      ],
-      "convocationAssessor": [
-        "Role B"
-      ]
-    },
-    {
-      "id": "795a",
-      "convocationTrainingName": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "convocationUnitService": [
-        "Unit C"
-      ],
-      "startDate": "0022-02-22",
-      "endDate": "0002-02-22",
-      "communicateDaysBefore": "1",
-      "timetable": "NO",
-      "convocationTheoreticalInstructor": [
-        "Role B"
-      ],
-      "convocationInstructors": [
-        "Role B"
-      ],
-      "convocationAssessor": [
-        "Role B"
-      ]
-    },
-    {
-      "id": "6a2f",
-      "convocationTrainingName": {
-        "0": {},
-        "1": {},
-        "2": {}
-      },
-      "convocationUnitService": [
-        "Unit C"
-      ],
       "startDate": "0001-11-11",
-      "endDate": "0011-11-11",
+      "endDate": "0001-11-11",
       "communicateDaysBefore": "1",
-      "timetable": "NO",
+      "timetable": "1",
       "convocationTheoreticalInstructor": [
-        "Role A"
+        "Role A",
+        "Role B"
       ],
       "convocationInstructors": [
+        "Role A",
         "Role B"
       ],
       "convocationAssessor": [

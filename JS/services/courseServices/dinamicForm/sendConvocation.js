@@ -3,19 +3,15 @@ export const sendConvocation = () => {
          const starDateInput = document.getElementById('startDate')
          const startDate = new Date(starDateInput.value)
 
-
          const communicateDaysBeforeInput = document.getElementById('communicateDaysBefore')
          const communicateDaysBefore = parseInt(communicateDaysBeforeInput.value)
-
 
          //Calculate the limit time to send convocation
          const comunicationDate = new Date(startDate)
          comunicationDate.setDate(startDate.getDate() - communicateDaysBefore)
 
-
         const today = new Date()
 
-    
         if(today > comunicationDate) {
             sendCommunication()
             console.log('Convocation sended automaticly')
@@ -25,8 +21,6 @@ export const sendConvocation = () => {
     } catch (error){
         console.error('Error to send the convocation:', error);
     }
-    
-    
 }
 const sendCommunication = () => {
     console.log('Sending convocation...');

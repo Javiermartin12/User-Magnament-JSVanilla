@@ -80,6 +80,6 @@ export const getTrainingTSheets = async () => {
             trainningTable.appendChild(row)
         });
     } catch (error) {
-        
+        alert('Error getting TTSheet') 
     }
 }

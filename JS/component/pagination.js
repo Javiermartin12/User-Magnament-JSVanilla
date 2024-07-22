@@ -23,9 +23,7 @@ export function pagination() {
      const sideBarCoursePage = document.getElementById('coursePageButton')
      const coursePageButton2 = document.getElementById('coursePageButton2')
      
-     
-     
-     btnNewUser.addEventListener('click', () => {
+      btnNewUser.addEventListener('click', () => {
          pageUser.classList.add('hidden')
          formPage.classList.remove('hidden')
         })
@@ -57,7 +55,7 @@ export function pagination() {
             pageCourse.classList.remove('hidden')
         })
 
-     const paginationSideBar = () => {
+    const paginationSideBar = () => {
         sideBarUserPage.addEventListener('click', () => {
             pageUser.classList.remove('hidden')
             pageTraining.classList.add('hidden')
@@ -89,13 +87,7 @@ export function pagination() {
             pageTraining.classList.add('hidden')
             pageUser.classList.add('hidden')
         })
-     }
+    }
      paginationSideBar()
-    
-
-
-    
-     
-
 }
 pagination()

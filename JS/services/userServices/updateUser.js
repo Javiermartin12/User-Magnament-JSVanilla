@@ -1,4 +1,3 @@
-
 const editUserForm = document.getElementById('editUserForm');
 
 export const updateUser = (users) => {
@@ -14,8 +13,6 @@ export const updateUser = (users) => {
     const friends =document.getElementById('editUsersFriends')
     friends.value = users.friends
 
-   
-
     fetch('http://localhost:3000/users')
         .then(response => response.json())
         .then(users => {
@@ -26,7 +23,6 @@ export const updateUser = (users) => {
                 option.value = friend.name
                 option.textContent = friend.name
                 editUsersFriends.appendChild(option)
-                
             })
         })
         const putUserUpdated = () => {
@@ -61,10 +57,9 @@ export const updateUser = (users) => {
             alert('There was a problem updating the user');
     
            }
-        })}
+        })
+    }
         putUserUpdated()
-    
-        
 }
 
 

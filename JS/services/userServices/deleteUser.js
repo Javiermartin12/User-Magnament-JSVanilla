@@ -10,5 +10,4 @@ export const deleteUser = async (id) => {
     } catch (error) {
         console.log('User not deleted')
     }
-
 }

@@ -1,5 +1,4 @@
 export const deleteCourseCall = async (id) => {
-
     try {
         const response = await fetch(`http://localhost:3000/courseCall/${id}`, {
             method: 'DELETE'
@@ -10,5 +9,4 @@ export const deleteCourseCall = async (id) => {
     } catch (error) {
         console.log('User not deleted')
     }
-
 }

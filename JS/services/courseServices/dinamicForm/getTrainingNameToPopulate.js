@@ -1,5 +1,4 @@
 export const getTrainingNameToPopulate = async () => {
-
     try {
         const trainingSelect = document.getElementById('convocationTrainingName')
         const response = await fetch('http://localhost:3000/trainingTechnicalSheets')
@@ -23,8 +22,6 @@ export const getTrainingNameToPopulate = async () => {
     } catch (error) {
         console.error('Error fetching training sheets:', error);
     }
-   
-
 }
 const populateCourseForm = async (id) => {
     try {
@@ -38,11 +35,8 @@ const populateCourseForm = async (id) => {
         populateMultiSelect(document.getElementById('convocationTheoreticalInstructor'), data.theoreticalInstructors)
         populateMultiSelect(document.getElementById('convocationInstructors'), data.instructors)
         populateMultiSelect(document.getElementById('convocationAssessor'), data.assessors)
-
-
     } catch (error) {
         console.log(`Error fetching training details: ${error}`);
-
     }
 }
 
@@ -61,6 +55,5 @@ const populateMultiSelect = (selectElement, values) => {
         option.textContent = values;
         selectElement.appendChild(option)
     }
-
 }
 

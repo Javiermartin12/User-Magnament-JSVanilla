@@ -12,11 +12,8 @@ export const getFriends = async () => {
             option.textContent = user.name
             userFriendsSelect.appendChild(option)
         });
-      
     } catch (error) {
         console.error('Error fetching users:', error);
-        
     }
-   
 }
 

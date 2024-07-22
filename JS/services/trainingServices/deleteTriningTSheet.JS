@@ -10,5 +10,4 @@ export const deleteTrainingTSheet = async (id) => {
     } catch (error) {
         console.log('TTSheet not deleted')
     }
-
 }

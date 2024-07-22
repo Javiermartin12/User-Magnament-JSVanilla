@@ -13,25 +13,15 @@ export const postCourseCall =  () => {
     submitCourseCall.addEventListener('submit', async (event) =>{
         event.preventDefault()
         const convocationTrainingNameElement = document.getElementById('convocationTrainingName')
-        const trainingName = convocationTrainingNameElement.options[convocationTrainingNameElement.selectedIndex].textContent;
-        console.log(trainingName)
-        console.log(convocationTrainingName)
+        const convocationTrainingName = convocationTrainingNameElement.options[convocationTrainingNameElement.selectedIndex].textContent;
         const convocationUnitService = Array.from(document.getElementById('convocationUnitService').selectedOptions).map(option => option.textContent)
-        console.log(convocationUnitService)
         const startDate = document.getElementById('startDate').value
-        console.log(startDate)
         const endDate = document.getElementById('endDate').value
-        console.log(endDate)
         const communicateDaysBefore = document.getElementById('communicateDaysBefore').value
-        console.log(communicateDaysBefore)
         const timetable = document.getElementById('timetable').value
-        console.log(timetable)
         const convocationTheoreticalInstructor = Array.from(document.getElementById('convocationTheoreticalInstructor').selectedOptions).map(option => option.textContent)
-        console.log(convocationTheoreticalInstructor)
         const convocationInstructors = Array.from(document.getElementById('convocationInstructors').selectedOptions).map(option => option.textContent)
-        console.log(convocationInstructors)
         const convocationAssessor = Array.from(document.getElementById('convocationAssessor').selectedOptions).map(option => option.textContent)
-        console.log(convocationAssessor)
         sendConvocation()
 
         if (!convocationTrainingName || !convocationUnitService.length || !startDate || !endDate || !communicateDaysBefore || !timetable
@@ -59,7 +49,6 @@ export const postCourseCall =  () => {
                         'Content-Type': 'application/json'
                     },
                     body:JSON.stringify(data)
-                    
                 })
                 if (response.ok) {
                     alert('CourseCall saved correctly');

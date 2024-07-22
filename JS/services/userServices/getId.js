@@ -12,7 +12,6 @@ export const checkIfIdExists = async (id) =>{
         return user.id === id;   
      } catch (error) {
         console.error('Error to verify ID:', error);
-        throw error;
         alert('Error to verify ID:', error);
     }
 }

@@ -1,7 +1,6 @@
  .container{
     height: 82%;
     width: 82%;
-   
     background: rgba(229, 229, 229, 0.5); /* BG black transparent */
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
@@ -10,7 +9,6 @@
 }
 
 .sideBar{
-
     height: 100%;
     width: 20%;
     border-top-left-radius: 1rem;
@@ -26,9 +24,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    
 }
-
 
 .containerColum{
     display: flex;
@@ -43,6 +39,5 @@
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
-    
 }
 

@@ -15,7 +15,6 @@ export const getUsers = async () => {
         }
         const usersTableBody = document.querySelector('#userTable tbody')
         
-       
         users.forEach(user => {
             
             const row = document.createElement('tr')
@@ -67,14 +66,12 @@ export const getUsers = async () => {
             })
             actionCell.appendChild(editButton)
             actionCell.appendChild(deleteButton)
+            
             row.appendChild(actionCell)
 
             usersTableBody.appendChild(row)
         })
-
     } catch (error) {
         console.error('Error fetching users:', error);
     }
-
-
 }

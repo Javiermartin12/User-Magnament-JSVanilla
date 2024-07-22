@@ -6,6 +6,7 @@ import { postTraining } from "./services/trainingServices/postTraining.js"
 import { getTrainingTSheets } from "./services/trainingServices/getTraningTSheet.js"
 import { postCourseCall } from "./services/courseServices/postCourseCall.js"
 import { getCourseCall } from "./services/courseServices/getCourseCall.js"
+
 document.addEventListener('DOMContentLoaded', () =>{
     pagination()
     postUser()
