@@ -66,3 +66,7 @@ textarea.success {
     margin-top: 0.5rem;
     display: block;
 }
+select[multiple] {
+    height: auto; 
+    overflow: auto; 
+}
