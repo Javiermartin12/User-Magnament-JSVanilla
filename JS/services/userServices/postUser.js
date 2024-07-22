@@ -12,28 +12,20 @@ export const postUser = () => {
         const email = document.getElementById('inputEmail').value
         const password = document.getElementById('inputPassword').value
         const friends =  Array.from(document.getElementById('usersFriends').selectedOptions).map(option => option.textContent)
-        
-
-       
-
-        const isIdExists = await checkIfIdExists(id)
-        
-        if (!id || !name || !email || !password) {
-            alert('Please complete the form');
-            return
-        }else if(!Array.isArray(friends)){
-            addEventListener('La respuesta no es un array')
-            return
-        }else if(isIdExists) {
-            alert(`ID ${id} already in use. Please choose other.`)
-            return;
-        } else {
-            alert('nothing')
-        }
+        console.log('Selected options:', friends);
 
         const data = { id, name, email, password, friends}
-        
+        console.log('Datos a enviar:', data); 
+
         try {
+            const isIdExists = await checkIfIdExists(id)
+            if (!id || !name || !email || !password) {
+                alert('Please complete the form');
+                return;
+            } else if (isIdExists) {
+                alert(`ID ${id} already in use. Please choose another.`);
+                return;
+            }
             const response = await fetch('http://localhost:3000/users', {
                 method: 'POST',
                 headers: {
