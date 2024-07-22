@@ -26,3 +26,6 @@
 button, input, textarea, select{
     cursor: pointer;
 }
+.userFormButton{
+    margin: 0.5rem;
+}
