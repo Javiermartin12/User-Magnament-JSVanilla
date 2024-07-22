@@ -152,23 +152,76 @@
   ],
   "courseCall": [
     {
-      "id": "5873",
-      "convocationTrainingName": "7e7e",
+      "id": "f6ed",
+      "convocationTrainingName": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
       "convocationUnitService": [
-        "unitA"
+        "Unit A",
+        "Unit C"
       ],
-      "startDate": "0001-01-01",
-      "endDate": "0001-01-01",
+      "startDate": "2024-07-22",
+      "endDate": "2024-07-23",
       "communicateDaysBefore": "1",
-      "timetable": "no",
+      "timetable": "NO",
       "convocationTheoreticalInstructor": [
-        "roleA"
+        "Role B"
       ],
       "convocationInstructors": [
-        "roleA"
+        "Role A"
       ],
       "convocationAssessor": [
-        "roleA"
+        "Role B"
+      ]
+    },
+    {
+      "id": "795a",
+      "convocationTrainingName": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "convocationUnitService": [
+        "Unit C"
+      ],
+      "startDate": "0022-02-22",
+      "endDate": "0002-02-22",
+      "communicateDaysBefore": "1",
+      "timetable": "NO",
+      "convocationTheoreticalInstructor": [
+        "Role B"
+      ],
+      "convocationInstructors": [
+        "Role B"
+      ],
+      "convocationAssessor": [
+        "Role B"
+      ]
+    },
+    {
+      "id": "6a2f",
+      "convocationTrainingName": {
+        "0": {},
+        "1": {},
+        "2": {}
+      },
+      "convocationUnitService": [
+        "Unit C"
+      ],
+      "startDate": "0001-11-11",
+      "endDate": "0011-11-11",
+      "communicateDaysBefore": "1",
+      "timetable": "NO",
+      "convocationTheoreticalInstructor": [
+        "Role A"
+      ],
+      "convocationInstructors": [
+        "Role B"
+      ],
+      "convocationAssessor": [
+        "Role B"
       ]
     }
   ]
