@@ -12,10 +12,10 @@ export const postUser = () => {
         const email = document.getElementById('inputEmail').value
         const password = document.getElementById('inputPassword').value
         const friends =  Array.from(document.getElementById('usersFriends').selectedOptions).map(option => option.textContent)
-        console.log('Selected options:', friends);
+       
 
         const data = { id, name, email, password, friends}
-        console.log('Datos a enviar:', data); 
+
 
         try {
             const isIdExists = await checkIfIdExists(id)
