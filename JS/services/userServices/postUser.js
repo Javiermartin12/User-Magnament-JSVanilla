@@ -1,8 +1,11 @@
 import {checkIfIdExists} from '../userServices/getId.js'
 export const postUser = () => { 
 
-        document.getElementById('createUser').addEventListener('submit', async (event) =>{
+        const userForm = document.getElementById('createUser')
+            userForm.addEventListener('submit', async (event) =>{
+                
         event.preventDefault()
+
 
         const id = document.getElementById('idUser').value
         const name = document.getElementById('userName').value
@@ -14,16 +17,16 @@ export const postUser = () => {
        
 
         const isIdExists = await checkIfIdExists(id)
-
-        if (isIdExists) {
-            alert(`ID ${id} already in use. Please choose other.`);
-            return;
-        }
-
+        
         if (!id || !name || !email || !password) {
             alert('Please complete the form');
+            return
+        }
+        if (isIdExists) {
+            alert(`ID ${id} already in use. Please choose other.`)
             return;
         }
+
         const data = { id, name, email, password, friends}
         
         try {
