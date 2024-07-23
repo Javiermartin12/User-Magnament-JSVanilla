@@ -6,15 +6,16 @@ This web application allows you to manage users, training and calls for training
 The interface is divided into several sections, each with its own functionality:
 
 User Page: To manage users.
-<img src="./assets/readme/User page.png" width=600rem height=600rem alt="User manage" />
+
+<img src="./assets/readme/User page.png" width=900rem height=600rem alt="User manage" />
 
 Training Page: To manage training technical sheets.
 
-<img src="./assets/readme/Training page.png" width=600rem height=600rem alt="User manage" />
+<img src="./assets/readme/Training page.png" width=900rem height=600rem alt="User manage" />
 
 Course Page: To manage course calls.
 
-<img src="./assets/readme/Course page.png" width=600rem height=600rem alt="User manage" />
+<img src="./assets/readme/Course page.png" width=900rem height=600rem alt="User manage" />
 
 A brief description of the project's purpose and functionality.
 
